@@ -1,4 +1,4 @@
-# Install script for directory: /home/een7/darkphotons_new/darkPhoton2
+# Install script for directory: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/darkPhoton"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/een7/darkphotons_new/darkPhotonBuild2/darkPhoton")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/darkPhoton")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/darkPhoton" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/darkPhoton")
     FILE(RPATH_REMOVE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/darkPhoton")
     IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/darkPhoton")
+      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/darkPhoton")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -56,7 +56,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/een7/darkphotons_new/darkPhotonBuild2/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/een7/darkphotons_new/darkPhotonBuild2/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/een7/darkphotons_new/darkPhoton2
+CMAKE_SOURCE_DIR = /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/een7/darkphotons_new/darkPhotonBuild2
+CMAKE_BINARY_DIR = /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,9 +113,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

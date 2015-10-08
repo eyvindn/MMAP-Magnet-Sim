@@ -45,7 +45,7 @@
 #include "G4PVParameterised.hh"
 #include "G4SubtractionSolid.hh"
 
-//#include "AdjustmentField.hh"
+#include "AdjustmentField.hh"
 #include "G4FieldManager.hh"
 #include "G4TransportationManager.hh"
 
@@ -1143,11 +1143,11 @@ void DetectorConstruction::ConstructSDandField()
 {
 
   /*Add Adjustment Magnet Field*/
-  //AdjustmentField* aField = new AdjustmentField; //"../magMap.table", -5.0, -5.0, -5.0)
-  //G4FieldManager* fieldMgr
-  //  = G4TransportationManager::GetTransportationManager()->GetFieldManager();
-  //fieldMgr->SetDetectorField(aField);
-  //fieldMgr->CreateChordFinder(aField);
+  AdjustmentField* aField = new AdjustmentField; //"../magMap.table", -5.0, -5.0, -5.0)
+  G4FieldManager* fieldMgr
+   = G4TransportationManager::GetTransportationManager()->GetFieldManager();
+  fieldMgr->SetDetectorField(aField);
+  fieldMgr->CreateChordFinder(aField);
 
   //!!!
   //Create a sensitive detector and put it with logical volumes

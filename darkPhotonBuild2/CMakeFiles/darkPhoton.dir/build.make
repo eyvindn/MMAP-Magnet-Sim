@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/een7/darkphotons_new/darkPhoton2
+CMAKE_SOURCE_DIR = /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/een7/darkphotons_new/darkPhotonBuild2
+CMAKE_BINARY_DIR = /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/darkPhoton.dir/depend.make
@@ -53,18 +53,18 @@ include CMakeFiles/darkPhoton.dir/progress.make
 include CMakeFiles/darkPhoton.dir/flags.make
 
 CMakeFiles/darkPhoton.dir/darkPhoton.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/darkPhoton.cc.o: /home/een7/darkphotons_new/darkPhoton2/darkPhoton.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/darkPhoton.dir/darkPhoton.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/darkPhoton.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/darkPhoton.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/darkPhoton.cc.o -c /home/een7/darkphotons_new/darkPhoton2/darkPhoton.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/darkPhoton.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/darkPhoton.cc
 
 CMakeFiles/darkPhoton.dir/darkPhoton.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/darkPhoton.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/darkPhoton.cc > CMakeFiles/darkPhoton.dir/darkPhoton.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/darkPhoton.cc > CMakeFiles/darkPhoton.dir/darkPhoton.cc.i
 
 CMakeFiles/darkPhoton.dir/darkPhoton.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/darkPhoton.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/darkPhoton.cc -o CMakeFiles/darkPhoton.dir/darkPhoton.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/darkPhoton.cc -o CMakeFiles/darkPhoton.dir/darkPhoton.cc.s
 
 CMakeFiles/darkPhoton.dir/darkPhoton.cc.o.requires:
 .PHONY : CMakeFiles/darkPhoton.dir/darkPhoton.cc.o.requires
@@ -75,42 +75,180 @@ CMakeFiles/darkPhoton.dir/darkPhoton.cc.o.provides: CMakeFiles/darkPhoton.dir/da
 
 CMakeFiles/darkPhoton.dir/darkPhoton.cc.o.provides.build: CMakeFiles/darkPhoton.dir/darkPhoton.cc.o
 
-CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/H02SteppingAction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/H02SteppingAction.cc
+CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/ActionInitialization.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/ActionInitialization.cc
 
-CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/H02SteppingAction.cc > CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.i
+CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/ActionInitialization.cc > CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.i
 
-CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/H02SteppingAction.cc -o CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.s
+CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/ActionInitialization.cc -o CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.s
 
-CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.requires
+CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.requires
 
-CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.provides
+CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.provides: CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.provides
 
-CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o
+CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o
+
+CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/AdjustmentField.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/AdjustmentField.cc
+
+CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/AdjustmentField.cc > CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.i
+
+CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/AdjustmentField.cc -o CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.s
+
+CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.provides: CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o
+
+CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/CalorHit.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/CalorHit.cc
+
+CMakeFiles/darkPhoton.dir/src/CalorHit.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/CalorHit.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/CalorHit.cc > CMakeFiles/darkPhoton.dir/src/CalorHit.cc.i
+
+CMakeFiles/darkPhoton.dir/src/CalorHit.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/CalorHit.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/CalorHit.cc -o CMakeFiles/darkPhoton.dir/src/CalorHit.cc.s
+
+CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.provides: CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o
+
+CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/CalorimeterSD.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/CalorimeterSD.cc
+
+CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/CalorimeterSD.cc > CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.i
+
+CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/CalorimeterSD.cc -o CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.s
+
+CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.provides: CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o
+
+CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/DetectorConstruction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/DetectorConstruction.cc
+
+CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/DetectorConstruction.cc > CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.i
+
+CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/DetectorConstruction.cc -o CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.s
+
+CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o
+
+CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/DetectorMessenger.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/DetectorMessenger.cc
+
+CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/DetectorMessenger.cc > CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.i
+
+CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/DetectorMessenger.cc -o CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.s
+
+CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.provides: CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o
+
+CMakeFiles/darkPhoton.dir/src/EventAction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/EventAction.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/EventAction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/EventAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/EventAction.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/EventAction.cc
+
+CMakeFiles/darkPhoton.dir/src/EventAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/EventAction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/EventAction.cc > CMakeFiles/darkPhoton.dir/src/EventAction.cc.i
+
+CMakeFiles/darkPhoton.dir/src/EventAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/EventAction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/EventAction.cc -o CMakeFiles/darkPhoton.dir/src/EventAction.cc.s
+
+CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/EventAction.cc.o
 
 CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/H02PrimaryGeneratorAction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_3)
+CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02PrimaryGeneratorAction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/H02PrimaryGeneratorAction.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02PrimaryGeneratorAction.cc
 
 CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/H02PrimaryGeneratorAction.cc > CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02PrimaryGeneratorAction.cc > CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.i
 
 CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/H02PrimaryGeneratorAction.cc -o CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02PrimaryGeneratorAction.cc -o CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.s
 
 CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o.requires:
 .PHONY : CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o.requires
@@ -121,65 +259,88 @@ CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o.provides: CMakeFile
 
 CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o
 
-CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/SquareParameterisation.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/SquareParameterisation.cc
+CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02PrimaryGeneratorMessenger.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02PrimaryGeneratorMessenger.cc
 
-CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/SquareParameterisation.cc > CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.i
+CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02PrimaryGeneratorMessenger.cc > CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.i
 
-CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/SquareParameterisation.cc -o CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.s
+CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02PrimaryGeneratorMessenger.cc -o CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.s
 
-CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.requires
+CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.requires
 
-CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.provides: CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.provides
+CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.provides: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.provides
 
-CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o
+CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o
 
-CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/PrimaryGeneratorAction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/PrimaryGeneratorAction.cc
+CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02SteppingAction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02SteppingAction.cc
 
-CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/PrimaryGeneratorAction.cc > CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.i
+CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02SteppingAction.cc > CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.i
 
-CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/PrimaryGeneratorAction.cc -o CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.s
+CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/H02SteppingAction.cc -o CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.s
 
-CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.requires
+CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.requires
 
-CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.provides
+CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.provides
 
-CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o
+CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o
+
+CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HEPEvtcom.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HEPEvtcom.cc
+
+CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HEPEvtcom.cc > CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.i
+
+CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HEPEvtcom.cc -o CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.s
+
+CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.provides: CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4AsciiReader.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_6)
+CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4AsciiReader.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4AsciiReader.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4AsciiReader.cc
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4AsciiReader.cc > CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4AsciiReader.cc > CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.i
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4AsciiReader.cc -o CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4AsciiReader.cc -o CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.s
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o.requires:
 .PHONY : CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o.requires
@@ -191,18 +352,18 @@ CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o.provides: CMakeFiles/darkP
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4AsciiReaderMessenger.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_7)
+CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4AsciiReaderMessenger.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4AsciiReaderMessenger.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4AsciiReaderMessenger.cc
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4AsciiReaderMessenger.cc > CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4AsciiReaderMessenger.cc > CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.i
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4AsciiReaderMessenger.cc -o CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4AsciiReaderMessenger.cc -o CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.s
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o.requires:
 .PHONY : CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o.requires
@@ -213,249 +374,19 @@ CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o.provides: CMakeFi
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o
 
-CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/DetectorConstruction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/DetectorConstruction.cc
-
-CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/DetectorConstruction.cc > CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.i
-
-CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/DetectorConstruction.cc -o CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.s
-
-CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o
-
-CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/AdjustmentField.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/AdjustmentField.cc
-
-CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/AdjustmentField.cc > CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.i
-
-CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/AdjustmentField.cc -o CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.s
-
-CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.provides: CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o
-
-CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/ActionInitialization.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/ActionInitialization.cc
-
-CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/ActionInitialization.cc > CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.i
-
-CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/ActionInitialization.cc -o CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.s
-
-CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.provides: CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o
-
-CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/CalorimeterSD.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/CalorimeterSD.cc
-
-CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/CalorimeterSD.cc > CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.i
-
-CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/CalorimeterSD.cc -o CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.s
-
-CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.provides: CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o
-
-CMakeFiles/darkPhoton.dir/src/EventAction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/EventAction.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/EventAction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/EventAction.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/EventAction.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/EventAction.cc
-
-CMakeFiles/darkPhoton.dir/src/EventAction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/EventAction.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/EventAction.cc > CMakeFiles/darkPhoton.dir/src/EventAction.cc.i
-
-CMakeFiles/darkPhoton.dir/src/EventAction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/EventAction.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/EventAction.cc -o CMakeFiles/darkPhoton.dir/src/EventAction.cc.s
-
-CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/EventAction.cc.o
-
-CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/H02PrimaryGeneratorMessenger.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/H02PrimaryGeneratorMessenger.cc
-
-CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/H02PrimaryGeneratorMessenger.cc > CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.i
-
-CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/H02PrimaryGeneratorMessenger.cc -o CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.s
-
-CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.provides: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o
-
-CMakeFiles/darkPhoton.dir/src/TestSD.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/TestSD.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/TestSD.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/TestSD.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/TestSD.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/TestSD.cc
-
-CMakeFiles/darkPhoton.dir/src/TestSD.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/TestSD.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/TestSD.cc > CMakeFiles/darkPhoton.dir/src/TestSD.cc.i
-
-CMakeFiles/darkPhoton.dir/src/TestSD.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/TestSD.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/TestSD.cc -o CMakeFiles/darkPhoton.dir/src/TestSD.cc.s
-
-CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.provides: CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/TestSD.cc.o
-
-CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/OmniSD.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_15)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/OmniSD.cc
-
-CMakeFiles/darkPhoton.dir/src/OmniSD.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/OmniSD.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/OmniSD.cc > CMakeFiles/darkPhoton.dir/src/OmniSD.cc.i
-
-CMakeFiles/darkPhoton.dir/src/OmniSD.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/OmniSD.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/OmniSD.cc -o CMakeFiles/darkPhoton.dir/src/OmniSD.cc.s
-
-CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.provides: CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o
-
-CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/OmniHit.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/OmniHit.cc
-
-CMakeFiles/darkPhoton.dir/src/OmniHit.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/OmniHit.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/OmniHit.cc > CMakeFiles/darkPhoton.dir/src/OmniHit.cc.i
-
-CMakeFiles/darkPhoton.dir/src/OmniHit.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/OmniHit.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/OmniHit.cc -o CMakeFiles/darkPhoton.dir/src/OmniHit.cc.s
-
-CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.provides: CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o
-
-CMakeFiles/darkPhoton.dir/src/RunAction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/RunAction.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/RunAction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/RunAction.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/RunAction.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/RunAction.cc
-
-CMakeFiles/darkPhoton.dir/src/RunAction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/RunAction.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/RunAction.cc > CMakeFiles/darkPhoton.dir/src/RunAction.cc.i
-
-CMakeFiles/darkPhoton.dir/src/RunAction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/RunAction.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/RunAction.cc -o CMakeFiles/darkPhoton.dir/src/RunAction.cc.s
-
-CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.requires
-
-CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.provides
-
-CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/RunAction.cc.o
-
 CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4Interface.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_18)
+CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4Interface.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4Interface.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4Interface.cc
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4Interface.cc > CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4Interface.cc > CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.i
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/HepMCG4Interface.cc -o CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/HepMCG4Interface.cc -o CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.s
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o.requires:
 .PHONY : CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o.requires
@@ -466,65 +397,134 @@ CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o.provides: CMakeFiles/darkPho
 
 CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o
 
-CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/CalorHit.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_19)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/CalorHit.cc
+CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/OmniHit.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/OmniHit.cc
 
-CMakeFiles/darkPhoton.dir/src/CalorHit.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/CalorHit.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/CalorHit.cc > CMakeFiles/darkPhoton.dir/src/CalorHit.cc.i
+CMakeFiles/darkPhoton.dir/src/OmniHit.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/OmniHit.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/OmniHit.cc > CMakeFiles/darkPhoton.dir/src/OmniHit.cc.i
 
-CMakeFiles/darkPhoton.dir/src/CalorHit.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/CalorHit.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/CalorHit.cc -o CMakeFiles/darkPhoton.dir/src/CalorHit.cc.s
+CMakeFiles/darkPhoton.dir/src/OmniHit.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/OmniHit.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/OmniHit.cc -o CMakeFiles/darkPhoton.dir/src/OmniHit.cc.s
 
-CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.requires
+CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.requires
 
-CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.provides: CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.provides
+CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.provides: CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.provides
 
-CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o
+CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o
 
-CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/HEPEvtcom.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_20)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/HEPEvtcom.cc
+CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/OmniSD.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/OmniSD.cc
 
-CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/HEPEvtcom.cc > CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.i
+CMakeFiles/darkPhoton.dir/src/OmniSD.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/OmniSD.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/OmniSD.cc > CMakeFiles/darkPhoton.dir/src/OmniSD.cc.i
 
-CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/HEPEvtcom.cc -o CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.s
+CMakeFiles/darkPhoton.dir/src/OmniSD.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/OmniSD.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/OmniSD.cc -o CMakeFiles/darkPhoton.dir/src/OmniSD.cc.s
 
-CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.requires
+CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.requires
 
-CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.provides: CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.provides
+CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.provides: CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.provides
 
-CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o
+CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o
+
+CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/PrimaryGeneratorAction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/PrimaryGeneratorAction.cc
+
+CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/PrimaryGeneratorAction.cc > CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.i
+
+CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/PrimaryGeneratorAction.cc -o CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.s
+
+CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o
+
+CMakeFiles/darkPhoton.dir/src/RunAction.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/RunAction.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/RunAction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/RunAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/RunAction.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/RunAction.cc
+
+CMakeFiles/darkPhoton.dir/src/RunAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/RunAction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/RunAction.cc > CMakeFiles/darkPhoton.dir/src/RunAction.cc.i
+
+CMakeFiles/darkPhoton.dir/src/RunAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/RunAction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/RunAction.cc -o CMakeFiles/darkPhoton.dir/src/RunAction.cc.s
+
+CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.provides: CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/RunAction.cc.o
+
+CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/SquareParameterisation.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/SquareParameterisation.cc
+
+CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/SquareParameterisation.cc > CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.i
+
+CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/SquareParameterisation.cc -o CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.s
+
+CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.requires
+
+CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.provides: CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.provides
+
+CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o
 
 CMakeFiles/darkPhoton.dir/src/TestHit.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/TestHit.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/TestHit.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_21)
+CMakeFiles/darkPhoton.dir/src/TestHit.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/TestHit.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/TestHit.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/TestHit.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/TestHit.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/TestHit.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/TestHit.cc
 
 CMakeFiles/darkPhoton.dir/src/TestHit.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/TestHit.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/TestHit.cc > CMakeFiles/darkPhoton.dir/src/TestHit.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/TestHit.cc > CMakeFiles/darkPhoton.dir/src/TestHit.cc.i
 
 CMakeFiles/darkPhoton.dir/src/TestHit.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/TestHit.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/TestHit.cc -o CMakeFiles/darkPhoton.dir/src/TestHit.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/TestHit.cc -o CMakeFiles/darkPhoton.dir/src/TestHit.cc.s
 
 CMakeFiles/darkPhoton.dir/src/TestHit.cc.o.requires:
 .PHONY : CMakeFiles/darkPhoton.dir/src/TestHit.cc.o.requires
@@ -535,128 +535,157 @@ CMakeFiles/darkPhoton.dir/src/TestHit.cc.o.provides: CMakeFiles/darkPhoton.dir/s
 
 CMakeFiles/darkPhoton.dir/src/TestHit.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/TestHit.cc.o
 
-CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o: CMakeFiles/darkPhoton.dir/flags.make
-CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o: /home/een7/darkphotons_new/darkPhoton2/src/DetectorMessenger.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_22)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o -c /home/een7/darkphotons_new/darkPhoton2/src/DetectorMessenger.cc
+CMakeFiles/darkPhoton.dir/src/TestSD.cc.o: CMakeFiles/darkPhoton.dir/flags.make
+CMakeFiles/darkPhoton.dir/src/TestSD.cc.o: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/TestSD.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/darkPhoton.dir/src/TestSD.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/darkPhoton.dir/src/TestSD.cc.o -c /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/TestSD.cc
 
-CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.i"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/een7/darkphotons_new/darkPhoton2/src/DetectorMessenger.cc > CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.i
+CMakeFiles/darkPhoton.dir/src/TestSD.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darkPhoton.dir/src/TestSD.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/TestSD.cc > CMakeFiles/darkPhoton.dir/src/TestSD.cc.i
 
-CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.s"
-	/cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/gcc/4.9.1-cms/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/een7/darkphotons_new/darkPhoton2/src/DetectorMessenger.cc -o CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.s
+CMakeFiles/darkPhoton.dir/src/TestSD.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darkPhoton.dir/src/TestSD.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2/src/TestSD.cc -o CMakeFiles/darkPhoton.dir/src/TestSD.cc.s
 
-CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.requires:
-.PHONY : CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.requires
+CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.requires:
+.PHONY : CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.requires
 
-CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.provides: CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.requires
-	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.provides.build
-.PHONY : CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.provides
+CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.provides: CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.requires
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.provides.build
+.PHONY : CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.provides
 
-CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o
+CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.provides.build: CMakeFiles/darkPhoton.dir/src/TestSD.cc.o
 
 # Object files for target darkPhoton
 darkPhoton_OBJECTS = \
 "CMakeFiles/darkPhoton.dir/darkPhoton.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/EventAction.cc.o" \
 "CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o" \
 "CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o" \
 "CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/EventAction.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/TestSD.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/RunAction.cc.o" \
 "CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/RunAction.cc.o" \
+"CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o" \
 "CMakeFiles/darkPhoton.dir/src/TestHit.cc.o" \
-"CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o"
+"CMakeFiles/darkPhoton.dir/src/TestSD.cc.o"
 
 # External object files for target darkPhoton
 darkPhoton_EXTERNAL_OBJECTS =
 
 darkPhoton: CMakeFiles/darkPhoton.dir/darkPhoton.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/EventAction.cc.o
 darkPhoton: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o
 darkPhoton: CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o
 darkPhoton: CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/EventAction.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/TestSD.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/RunAction.cc.o
 darkPhoton: CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/RunAction.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o
 darkPhoton: CMakeFiles/darkPhoton.dir/src/TestHit.cc.o
-darkPhoton: CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o
+darkPhoton: CMakeFiles/darkPhoton.dir/src/TestSD.cc.o
 darkPhoton: CMakeFiles/darkPhoton.dir/build.make
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4Tree.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4FR.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4GMocren.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4visHepRep.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4RayTracer.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4VRML.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4vis_management.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4modeling.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4interfaces.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4persistency.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4analysis.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4error_propagation.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4readout.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4physicslists.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4run.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4event.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4tracking.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4parmodels.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4processes.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4digits_hits.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4track.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4particles.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4geometry.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4materials.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4graphics_reps.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4intercoms.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4global.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4zlib.so
-darkPhoton: /nfs/cms/mc1/cjc359/Dark-Photons/madgraph/hepmcbuild/lib/libHepMC.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4FR.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4vis_management.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4modeling.so
-darkPhoton: /cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/xerces-c/2.8.0-cms/lib/libxerces-c.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4run.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4event.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4tracking.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4processes.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4zlib.so
-darkPhoton: /cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/expat/2.0.1-cms/lib/libexpat.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4digits_hits.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4track.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4particles.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4geometry.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4materials.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4graphics_reps.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4intercoms.so
-darkPhoton: /home/een7/darkphotons_new/10.00.p03/lib/libG4global.so
-darkPhoton: /cvmfs/cms.cern.ch/slc6_amd64_gcc491/external/clhep/2.1.4.1-cms/lib/libCLHEP.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4Tree.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4FR.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4GMocren.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4visHepRep.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4RayTracer.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4VRML.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4OpenGL.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4gl2ps.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4vis_management.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4modeling.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4interfaces.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4persistency.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4analysis.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4error_propagation.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4readout.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4physicslists.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4run.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4event.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4tracking.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4parmodels.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4processes.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4digits_hits.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4track.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4particles.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4geometry.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4materials.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4graphics_reps.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4intercoms.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4global.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4zlib.so
+darkPhoton: /media/sf_darkphotons/madgraph/hepmcbuild/lib/libHepMC.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4FR.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4vis_management.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4modeling.so
+darkPhoton: /usr/lib64/libXm.so
+darkPhoton: /usr/lib64/libSM.so
+darkPhoton: /usr/lib64/libICE.so
+darkPhoton: /usr/lib64/libX11.so
+darkPhoton: /usr/lib64/libXext.so
+darkPhoton: /usr/lib64/libXmu.so
+darkPhoton: /usr/lib64/libGLU.so
+darkPhoton: /usr/lib64/libGL.so
+darkPhoton: /usr/lib64/libQtOpenGL.so
+darkPhoton: /usr/lib64/libQtGui.so
+darkPhoton: /usr/lib64/libQtGui_debug.so
+darkPhoton: /usr/lib64/libpng.so
+darkPhoton: /usr/lib64/libXi.so
+darkPhoton: /usr/lib64/libXrender.so
+darkPhoton: /usr/lib64/libXrandr.so
+darkPhoton: /usr/lib64/libXcursor.so
+darkPhoton: /usr/lib64/libXinerama.so
+darkPhoton: /usr/lib64/libXfixes.so
+darkPhoton: /usr/lib64/libfreetype.so
+darkPhoton: /usr/lib64/libfontconfig.so
+darkPhoton: /usr/lib64/libm.so
+darkPhoton: /usr/lib64/libQtCore.so
+darkPhoton: /usr/lib64/libQtCore_debug.so
+darkPhoton: /usr/lib64/libz.so
+darkPhoton: /usr/lib64/libgthread-2.0.so
+darkPhoton: /usr/lib64/libglib-2.0.so
+darkPhoton: /usr/lib64/librt.so
+darkPhoton: /usr/local/XercesC/3.1.1/lib/libxerces-c.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4run.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4event.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4tracking.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4processes.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4zlib.so
+darkPhoton: /usr/lib64/libexpat.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4digits_hits.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4track.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4particles.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4geometry.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4materials.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4graphics_reps.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4intercoms.so
+darkPhoton: /usr/local/geant4.10.00.p01/lib64/libG4global.so
+darkPhoton: /usr/local/clhep/2.1.4.1/lib/libCLHEP.so
 darkPhoton: CMakeFiles/darkPhoton.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable darkPhoton"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/darkPhoton.dir/link.txt --verbose=$(VERBOSE)
@@ -666,27 +695,27 @@ CMakeFiles/darkPhoton.dir/build: darkPhoton
 .PHONY : CMakeFiles/darkPhoton.dir/build
 
 CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/darkPhoton.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.requires
 CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorAction.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/H02SteppingAction.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.requires
 CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReader.cc.o.requires
 CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/HepMCG4AsciiReaderMessenger.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/DetectorConstruction.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/AdjustmentField.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/ActionInitialization.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/CalorimeterSD.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/EventAction.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/H02PrimaryGeneratorMessenger.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.requires
 CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/HepMCG4Interface.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/CalorHit.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/HEPEvtcom.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/OmniHit.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/OmniSD.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/PrimaryGeneratorAction.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/RunAction.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/SquareParameterisation.cc.o.requires
 CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/TestHit.cc.o.requires
-CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/DetectorMessenger.cc.o.requires
+CMakeFiles/darkPhoton.dir/requires: CMakeFiles/darkPhoton.dir/src/TestSD.cc.o.requires
 .PHONY : CMakeFiles/darkPhoton.dir/requires
 
 CMakeFiles/darkPhoton.dir/clean:
@@ -694,6 +723,6 @@ CMakeFiles/darkPhoton.dir/clean:
 .PHONY : CMakeFiles/darkPhoton.dir/clean
 
 CMakeFiles/darkPhoton.dir/depend:
-	cd /home/een7/darkphotons_new/darkPhotonBuild2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/een7/darkphotons_new/darkPhoton2 /home/een7/darkphotons_new/darkPhoton2 /home/een7/darkphotons_new/darkPhotonBuild2 /home/een7/darkphotons_new/darkPhotonBuild2 /home/een7/darkphotons_new/darkPhotonBuild2/CMakeFiles/darkPhoton.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2 /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2 /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2 /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2 /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles/darkPhoton.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/darkPhoton.dir/depend
 

@@ -28,12 +28,13 @@
 /// \file RE05/include/AdjustmentField.hh
 /// \brief Definition of the AdjustmentField class
 //
-
+using namespace std;
 #ifndef AdjustmentField_H
 #define AdjustmentField_H 1
 
 #include "globals.hh"
 #include "G4MagneticField.hh"
+#include <vector>
 
 class AdjustmentField : public G4MagneticField
 {
@@ -45,9 +46,17 @@ class AdjustmentField : public G4MagneticField
                                double *Bfield ) const;
 
   private:
-    G4double Bz;
-    G4double rmax_sq;
-    G4double zmax;
+    struct position {
+        G4double x;
+        G4double y;
+        G4double z;
+    };
+    int HEIGHT;
+    int WIDTH;
+    int DEPTH;
+
+    position center;
+    std::vector<std::vector<std::vector<position> > > magField;
 };
 
 #endif
