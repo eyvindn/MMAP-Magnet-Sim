@@ -11,7 +11,7 @@ AdjustmentField::AdjustmentField()
 
   center.x = 0;
   center.y = 0;
-  center.z = -(.5*10.*m);
+  center.z = -(.5*10.*m + 0.5*m);
 
   int i = 0;
   while(std::getline(file, line))
@@ -77,22 +77,32 @@ AdjustmentField::~AdjustmentField()
 void AdjustmentField::GetFieldValue(const double Point[3],double *Bfield) const
 {
 
-  G4double posX = Point[0]/cm;
-  G4double posY = Point[1]/cm;
-  G4double posZ = Point[2]/cm;
+  G4double constFactor = 1.0;
+
+  //printf("Evaluating magfield at %f, %f, %f\n", Point[0], Point[1], Point[2]);
+
+  G4double posX = (Point[0]-center.x)/cm;
+  G4double posY = (Point[1]-center.y)/cm;
+  G4double posZ = (Point[2]-center.z)/cm;
 
   //Translate to wherever the magnet is.
-  posX -= (center.x - HEIGHT/2);
-  posY -= (center.y - WIDTH/2);
-  posZ -= (center.z - DEPTH/2);
+  posX += HEIGHT/2;
+  posY += WIDTH/2;
+  posZ += DEPTH/2;
 
-  if( posX <= HEIGHT && posX >= 0 &&
-      posY <= WIDTH && posY >= 0 &&
-      posZ <= DEPTH && posZ >= 0){
+  //printf("Calcpos is %f, %f, %f\n", posX, posY, posZ);
+
+  if( posX <= HEIGHT*2 && posX >= 0 &&
+      posY <= WIDTH*2 && posY >= 0 &&
+      posZ <= DEPTH*2 && posZ >= 0){
+
     //We are within the magnetic region - extrapolate
-    Bfield[0] = magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].x*gauss;
-    Bfield[1] = magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].y*gauss;
-    Bfield[2] = magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].z*gauss;
+
+
+    Bfield[0] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].x*gauss;
+    Bfield[1] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].y*gauss;
+    Bfield[2] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].z*gauss;
+    //printf("FOUND %f, %f, %f\n", posX, posY, posZ);
 
   } else {
     Bfield[0] = 0*gauss;

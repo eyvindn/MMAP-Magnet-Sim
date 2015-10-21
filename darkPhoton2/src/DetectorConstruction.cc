@@ -68,7 +68,7 @@ fLogicCalor(NULL), //logical volume for calorimeter
     fCLEOMaterial(NULL),
     fWorldMaterial(NULL),
   fStepLimit(NULL), 
-    fCheckOverlaps(true), 
+    fCheckOverlaps(false),
     fLiningMaterial(NULL), 
     fVacuumMaterial(NULL),
     fBeamLineMaterial(NULL),
@@ -307,16 +307,18 @@ G4Box* targetS =
  fLogicTarget = 
    new G4LogicalVolume(targetS, fTargetMaterial, "Target", 0,0,0);
  
- /*
- new G4PVPlacement(0, // no rotation
-		   positionTarget, // at (x,y,z)
-		   fLogicTarget, // logical volume
-		   "Target", //name
-		   worldLV, //mother volume
-		   false, //no booleans
-		   0, // copy number
-		   fCheckOverlaps); //true
- */
+//
+// new G4PVPlacement(0, // no rotation
+//		   positionTarget, // at (x,y,z)
+//		   fLogicTarget, // logical volume
+//		   "Target", //name
+//		   worldLV, //mother volume
+//		   false, //no booleans
+//		   0, // copy number
+//		   fCheckOverlaps); //true
+
+
+
  
 
  G4cout << "Target is " << targetLength/cm << " cm of " <<
@@ -1065,7 +1067,7 @@ G4LogicalVolume * pipeVoidLV =
        new G4Box("quadmag", quadW/2, quadW/2, quadL/2);
      G4LogicalVolume* quadmagLV = 
        new G4LogicalVolume(quadmag, fWorldMaterial, "quadmagLV");
-     /*
+
      new G4PVPlacement(0, 
 		       G4ThreeVector(0., 0., targetPos-4.8*ft),
 		       quadmagLV, 
@@ -1074,7 +1076,7 @@ G4LogicalVolume * pipeVoidLV =
 		       false, 
 		       0, 
 		       fCheckOverlaps);
-     */
+
 
      //Dipole Magnet
 
@@ -1148,6 +1150,7 @@ void DetectorConstruction::ConstructSDandField()
    = G4TransportationManager::GetTransportationManager()->GetFieldManager();
   fieldMgr->SetDetectorField(aField);
   fieldMgr->CreateChordFinder(aField);
+
 
   //!!!
   //Create a sensitive detector and put it with logical volumes

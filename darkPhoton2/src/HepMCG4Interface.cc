@@ -109,7 +109,7 @@ void HepMCG4Interface::HepMC2G4(const HepMC::GenEvent* hepmcevt,
 
       G4int pdgcode= (*vpitr)-> pdg_id();
 
-      if ( pdgcode != 22 ) continue;
+      //if ( pdgcode != 22 ) continue;
       pos= (*vpitr)-> momentum();
       G4LorentzVector p(pos.px(), pos.py(), pos.pz(), pos.e());
       

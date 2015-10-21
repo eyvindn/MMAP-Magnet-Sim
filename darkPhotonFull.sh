@@ -9,12 +9,12 @@ make clean
 make -j4
 ./darkPhoton
 
-mkdir /home/local1/clusterData/backgrounds
-currentfolder=$(date +%Y:%m:%d#%H:%M:%S)
-mkdir /home/local1/clusterData/backgrounds/$currentfolder
-mv *.root /home/local1/clusterData/backgrounds/$currentfolder
-rm -rf *.root
-cd /home/local1/clusterData/backgrounds/$currentfolder
+#mkdir /home/local1/clusterData/backgrounds
+#currentfolder=$(date +%Y:%m:%d#%H:%M:%S)
+#mkdir /home/local1/clusterData/backgrounds/$currentfolder
+#mv *.root /home/local1/clusterData/backgrounds/$currentfolder
+#rm -rf *.root
+#cd /home/local1/clusterData/backgrounds/$currentfolder
 hadd complete.root *.root
 mkdir threadfiles
 mv *.root threadfiles

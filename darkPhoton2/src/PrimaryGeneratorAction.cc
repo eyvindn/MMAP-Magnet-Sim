@@ -82,8 +82,8 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   //fParticleSource->GetEneDist()->SetMonoEnergy(5*GeV);
   
   fParticleSource->GetCurrentSource()->GetEneDist()->SetEnergyDisType("Pow");
-  G4double min=0.1*MeV;
-  G4double max=2000*MeV;
+  G4double min=500*MeV;
+  G4double max=501*MeV;
   G4double mass=particleDefinition->GetPDGMass();
   fParticleSource->GetCurrentSource()->GetEneDist()->SetEmax(max);
   fParticleSource->GetCurrentSource()->GetEneDist()->SetEmin(min);

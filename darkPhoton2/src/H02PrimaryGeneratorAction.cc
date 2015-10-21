@@ -74,7 +74,7 @@ H02PrimaryGeneratorAction::H02PrimaryGeneratorAction()
   fParticleSource->GetCurrentSource()->GetAngDist()->DefineAngRefAxes("angref2", G4ThreeVector(0,1,0));
 
   fParticleSource->GetCurrentSource()->GetEneDist()->SetEnergyDisType("Lin");
-  G4double max=5*GeV;
+  G4double max=500*MeV;
   G4double range=50*MeV;
   G4double mass=particleDefinition->GetPDGMass();
   fParticleSource->GetCurrentSource()->GetEneDist()->SetEmax(max-mass);
