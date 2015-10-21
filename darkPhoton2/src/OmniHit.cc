@@ -21,35 +21,31 @@
 G4ThreadLocal G4Allocator<OmniHit>* OmniHitAllocator;
 
 OmniHit::OmniHit()
-        : G4VHit(),
-          fTrackID(-1),
-          fTotalEnergy(0.),
-          fPos(G4ThreeVector()),
-          fMomentum(G4ThreeVector()),
-          fCharge(0.),
-          fCham(-1),
-          fStart(G4ThreeVector())
+  : G4VHit(),
+    fTrackID(-1), 
+    fTotalEnergy(0.),
+    fPos(G4ThreeVector()), 
+    fMomentum(G4ThreeVector()), 
+    fCharge(0.), 
+    fStart(G4ThreeVector()), 
+    fTar(G4ThreeVector())
 {}
 
 OmniHit::~OmniHit()
 {}
 
-OmniHit::OmniHit(G4int z)
-{
-  fCham = z;
-}
 
 //Create a hit that exactly mirrors another hit
 OmniHit::OmniHit(const OmniHit& hit)
-        : G4VHit()
-{
+  : G4VHit()
+{ 
   fTrackID = hit.fTrackID;
   fTotalEnergy = hit.fTotalEnergy;
   fPos = hit.fPos;
   fMomentum = hit.fMomentum;
-  fCham = hit.fCham;
   fCharge = hit.fCharge;
   fStart = hit.fStart;
+  fTar = hit.fTar;
 }
 
 const OmniHit& OmniHit::operator=(const OmniHit& hit)
@@ -58,9 +54,9 @@ const OmniHit& OmniHit::operator=(const OmniHit& hit)
   fTotalEnergy = hit.fTotalEnergy;
   fPos = hit.fPos;
   fMomentum = hit.fMomentum;
-  fCham = hit.fCham;
   fCharge = hit.fCharge;
   fStart = hit.fStart;
+  fTar=hit.fTar;
 
   return *this;
 
@@ -76,20 +72,21 @@ void OmniHit::Draw()
 {
   G4VVisManager* pVVisManager = G4VVisManager::GetConcreteInstance();
   if(pVVisManager)
-  {
-    G4Circle circle(fPos);
-    circle.SetScreenSize(4.);
-    circle.SetFillStyle(G4Circle::filled);
-    G4Colour colour(0.,1.0,0.);
-    G4VisAttributes attribs(colour);
-    circle.SetVisAttributes(attribs);
-    pVVisManager->Draw(circle);
-  }
+    {
+      G4Circle circle(fPos);
+      circle.SetScreenSize(4.);
+      circle.SetFillStyle(G4Circle::filled);
+      G4Colour colour(0.,1.0,0.);
+      G4VisAttributes attribs(colour);
+      circle.SetVisAttributes(attribs);
+      pVVisManager->Draw(circle);
+    }
 }
 
 void OmniHit::Print()
 {
 }
+
 
 
 

@@ -49,6 +49,7 @@
 #include "G4FieldManager.hh"
 #include "G4TransportationManager.hh"
 
+
 static const G4double inch = 2.54*cm;
 static const G4double ft = 12*inch;
 
@@ -68,12 +69,12 @@ fLogicCalor(NULL), //logical volume for calorimeter
     fCLEOMaterial(NULL),
     fWorldMaterial(NULL),
   fStepLimit(NULL), 
-    fCheckOverlaps(false),
+    fCheckOverlaps(false), 
     fLiningMaterial(NULL), 
     fVacuumMaterial(NULL),
     fBeamLineMaterial(NULL),
     fScintillatorMaterial(NULL),
-    CLEObool(true)
+    CLEObool(false)
     //  fCenterToFront(0.)
 {
  fMessenger = new DetectorMessenger(this);
@@ -307,18 +308,16 @@ G4Box* targetS =
  fLogicTarget = 
    new G4LogicalVolume(targetS, fTargetMaterial, "Target", 0,0,0);
  
-//
-// new G4PVPlacement(0, // no rotation
-//		   positionTarget, // at (x,y,z)
-//		   fLogicTarget, // logical volume
-//		   "Target", //name
-//		   worldLV, //mother volume
-//		   false, //no booleans
-//		   0, // copy number
-//		   fCheckOverlaps); //true
-
-
-
+ /*
+ new G4PVPlacement(0, // no rotation
+		   positionTarget, // at (x,y,z)
+		   fLogicTarget, // logical volume
+		   "Target", //name
+		   worldLV, //mother volume
+		   false, //no booleans
+		   0, // copy number
+		   fCheckOverlaps); //true
+ */
  
 
  G4cout << "Target is " << targetLength/cm << " cm of " <<
@@ -349,7 +348,7 @@ G4VSolid* boxS =
 					  fCalorMaterial,
 					  "CrystalLV", 
 					  0, 0, 0);
-    
+     /* For bigger detector 
      if ((i>10 && i<24) || (i>43 && i < 61) || (i>77 && i<97) 
 	 || (i>110 && i<134) || (i>144 && i<170) || (i>178 && i<206)
 	 || (i>213 && i<241) || (i>247 && i<277) || (i>281 && i<313)
@@ -364,6 +363,23 @@ G4VSolid* boxS =
 	 || (i>947 && i<977) || (i>983 && i<1011) || (i>1018 && i<1046)
 	 || (i>1054 && i<1080) || (i>1090 && i<1114) || (i>1127 && i<1147)
 	 || (i>1163 && i<1181) || (i>1200 && i<1214))
+     */
+     if ((i>46 && i<58) || (i>79 && i<95) || (i>112 && i<132) ||
+	 (i>146 && i<168) || (i>180 && i<204) || (i>214 && i<240) ||
+	 (i>248 && i<276) || (i>282 && i<274) || (i>282 && i<312) ||
+	 (i>317 && i<347) || (i>351 && i<383) || (i>386 && i<400) ||
+	 (i>404 && i<418) || (i>420 && i<434) || (i>440 && i<454) ||
+	 (i>455 && i<468) || (i>476 && i<489) || (i>490 && i<502) ||
+	 (i>512 && i<524) || (i>525 && i<537) || (i>547 && i<559) ||
+	 (i>560 && i<571) || (i>583 && i<594) || (i>595 && i<606) ||
+	 (i>618 && i<629) || (i>630 && i<641) || (i>653 && i<664) ||
+	 (i>665 && i<677) || (i>687 && i<699) || (i>700 && i<712) || 
+	 (i>722 && i<734) || (i>735 && i<748) || (i>756 && i<769) || 
+	 (i>770 && i<784) || (i>790 && i<804) || (i>806 && i<820) ||
+	 (i>824 && i<838) || (i>841 && i<873) || (i>877 && i<907) ||
+	 (i>912 && i<942) || (i>948 && i<976) || (i>984 && i<1010) ||
+	 (i>1020 && i<1044) || (i>1056 && i<1078) || (i>1092 && i<1112) ||
+	 (i>1129 && i<1145) || (i>1166 && i<1178))
        {
 	 new G4PVPlacement(0, 
 			   position, 
@@ -1015,7 +1031,7 @@ G4LogicalVolume * pipeVoidLV =
 		   fCheckOverlaps);
  
 
- G4VSolid* liningO = new G4Tubs("liningO", 94.2*cm, 94.7*cm, crystalLength/2, 
+ G4VSolid* liningO = new G4Tubs("liningO", 90.2*cm, 90.7*cm, crystalLength/2, 
 				0.*deg, 360.*deg);
  G4LogicalVolume* liningOLV = new G4LogicalVolume(liningO, fLiningMaterial, 
 						  "LiningOLV");
@@ -1052,7 +1068,7 @@ G4LogicalVolume * pipeVoidLV =
 		   0, 
 		   fCheckOverlaps);
 
-
+     
 
 									  
     
@@ -1067,7 +1083,7 @@ G4LogicalVolume * pipeVoidLV =
        new G4Box("quadmag", quadW/2, quadW/2, quadL/2);
      G4LogicalVolume* quadmagLV = 
        new G4LogicalVolume(quadmag, fWorldMaterial, "quadmagLV");
-
+     /*
      new G4PVPlacement(0, 
 		       G4ThreeVector(0., 0., targetPos-4.8*ft),
 		       quadmagLV, 
@@ -1076,7 +1092,7 @@ G4LogicalVolume * pipeVoidLV =
 		       false, 
 		       0, 
 		       fCheckOverlaps);
-
+     */
 
      //Dipole Magnet
 
@@ -1143,22 +1159,20 @@ G4LogicalVolume * pipeVoidLV =
 
 void DetectorConstruction::ConstructSDandField()
 {
-
-  /*Add Adjustment Magnet Field*/
-  AdjustmentField* aField = new AdjustmentField; //"../magMap.table", -5.0, -5.0, -5.0)
-  G4FieldManager* fieldMgr
-   = G4TransportationManager::GetTransportationManager()->GetFieldManager();
-  fieldMgr->SetDetectorField(aField);
-  fieldMgr->CreateChordFinder(aField);
-
-
   //!!!
   //Create a sensitive detector and put it with logical volumes
   G4SDManager* sdMan = G4SDManager::GetSDMpointer();
   G4String SDname;
 
+    /*Add Adjustment Magnet Field*/
+    AdjustmentField* aField = new AdjustmentField; //"../magMap.table", -5.0, -5.0, -5.0)
+    G4FieldManager* fieldMgr
+            = G4TransportationManager::GetTransportationManager()->GetFieldManager();
+    fieldMgr->SetDetectorField(aField);
+    fieldMgr->CreateChordFinder(aField);
 
-  SDname = "/calorimeterSD";
+
+    SDname = "/calorimeterSD";
   TestSD* calorimeterSD =
     new TestSD(SDname, "TestHitsCollection");
   sdMan->AddNewDetector(calorimeterSD);

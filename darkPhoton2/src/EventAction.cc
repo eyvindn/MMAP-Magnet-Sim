@@ -112,37 +112,41 @@ void EventAction::EndOfEventAction(const G4Event* event)
   analysisMan->FillNtupleDColumn(0, 1226, 100.);
   analysisMan->FillNtupleIColumn(0, 1227, 1);
   analysisMan->FillNtupleIColumn(0, 1228, eventID);
-  OmniHit* hit2 = (*omniHitColl)[0];
+
+  
   G4int hitNum =  omniHitColl->entries();
+  G4cout << "Hit number: " << hitNum << G4endl;
   for (int q=0; q<hitNum; q++)
     {
       OmniHit* hit2 = (*omniHitColl)[q];
-      if (hit2->GetCharge()!=0) {continue;}
-      else {
-	if (hit2->GetStart().getZ()>-4000) {continue;}
-	else{
+      //if (hit2->GetCharge()!=0) {continue;}
+      //else {
+      //	if (hit2->GetStart().getZ()>-4000) {continue;}
+      //else{
 	  energy = hit2->GetTotalEnergy(); 
 	  
 	  double x = hit2->GetPos().getX();
 	  double y= hit2->GetPos().getY();
 	  G4double theta = std::atan(std::sqrt(std::pow(x, 2.)+std::pow(y, 2.))/10150.);
 
-	    G4double phi = std::atan2(y, x);
 	    analysisMan->FillNtupleDColumn(1, 0, energy); 	   
-	    analysisMan->FillNtupleDColumn(1, 1, theta*180/pi);
-	    analysisMan->FillNtupleDColumn(1, 2, phi*180/pi);
-	    analysisMan->FillNtupleDColumn(1, 3, hit2->GetCharge());
-	    analysisMan->FillNtupleIColumn(1, 4, eventID);
-	    analysisMan->FillNtupleDColumn(1, 5, hit2->GetStart().getX());
-	    analysisMan->FillNtupleDColumn(1, 6, hit2->GetStart().getY());
-	    analysisMan->FillNtupleDColumn(1, 7, hit2->GetStart().getZ());
-	    analysisMan->FillNtupleIColumn(1, 8, hit2->GetTrack());
+	    //analysisMan->FillNtupleDColumn(1, 1, theta*180/pi);
+	    //analysisMan->FillNtupleDColumn(1, 2, phi*180/pi);
+	    analysisMan->FillNtupleDColumn(1, 1, hit2->GetCharge());
+	    //analysisMan->FillNtupleIColumn(1, 4, eventID);
+	    analysisMan->FillNtupleDColumn(1, 2, hit2->GetStart().getX());
+	    analysisMan->FillNtupleDColumn(1, 3, hit2->GetStart().getY());
+	    analysisMan->FillNtupleDColumn(1, 4, hit2->GetStart().getZ());
+	    analysisMan->FillNtupleDColumn(1, 5, hit2->GetTar().getX());
+	    analysisMan->FillNtupleDColumn(1, 6, hit2->GetTar().getY());
+	    analysisMan->FillNtupleDColumn(1, 7, hit2->GetTar().getZ());
+	    //analysisMan->FillNtupleIColumn(1, 8, hit2->GetTrack());
 	    analysisMan->AddNtupleRow(1);
-	  }
-	}
-      }
+	    // }
+	    //}
+    }
 
-  
+ 
 
 if (hits) {analysisMan->FillNtupleIColumn(0, 1228, 1);}
 analysisMan->AddNtupleRow(0); // now root number of events matches Geant

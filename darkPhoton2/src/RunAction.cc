@@ -55,20 +55,24 @@ RunAction::RunAction()
       analysisMan->CreateNtuple("Check", "Check");
  
       analysisMan->CreateNtupleDColumn("Energy");
-      analysisMan->CreateNtupleDColumn("Theta");
-      analysisMan->CreateNtupleDColumn("Phi");
+      //analysisMan->CreateNtupleDColumn("Theta");
+      //analysisMan->CreateNtupleDColumn("Phi");
       analysisMan->CreateNtupleDColumn("Charge");
-      analysisMan->CreateNtupleIColumn("EventID");
+      //analysisMan->CreateNtupleIColumn("EventID");
       analysisMan->CreateNtupleDColumn("StartPosX");
       analysisMan->CreateNtupleDColumn("StartPosY");
       analysisMan->CreateNtupleDColumn("StartPosZ");
-      analysisMan->CreateNtupleIColumn("TrackID");
+      analysisMan->CreateNtupleDColumn("TarX");
+      analysisMan->CreateNtupleDColumn("TarY");
+      analysisMan->CreateNtupleDColumn("TarZ");
+      //analysisMan->CreateNtupleIColumn("TrackID");
       analysisMan->FinishNtuple();
 
       analysisMan->CreateNtuple("True", "True");
       analysisMan->CreateNtupleDColumn("Energy");
       analysisMan->CreateNtupleDColumn("Theta");
       analysisMan->CreateNtupleDColumn("Phi");
+      
 
       analysisMan->FinishNtuple();
       

@@ -51,6 +51,8 @@ public:
   {fCharge = cha;}
   void SetStart(G4ThreeVector start)
   {fStart = start;}
+  void SetTar(G4ThreeVector tar)
+  {fTar = tar;}
 
   //Get methods
   G4int GetTrack()
@@ -67,6 +69,9 @@ public:
   {return fStart;}
   G4double GetCharge()
   {return fCharge;}
+  G4ThreeVector GetTar()
+  {return fTar;}
+  
  
 
 
@@ -79,6 +84,7 @@ private:
   const G4LogicalVolume* fLogV;
   G4ThreeVector fStart;
   G4double fCharge;
+  G4ThreeVector fStart;
 };
 
 //Allow for a hits collection of OmniHits
