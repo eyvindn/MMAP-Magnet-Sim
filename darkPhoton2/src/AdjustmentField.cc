@@ -23,7 +23,7 @@ AdjustmentField::AdjustmentField()
         DEPTH = (DEPTH-1)*2;
         HEIGHT = HEIGHT-1;
         WIDTH = WIDTH-1;
-        printf("Pos is H %i W %i D %i\n",HEIGHT, WIDTH, DEPTH);
+        //printf("Pos is H %i W %i D %i\n",HEIGHT, WIDTH, DEPTH);
         //Set up sizes. (HEIGHT x WIDTH)
         magField.resize(HEIGHT*2);
         for (int k = 0; k < HEIGHT*2; ++k) {
@@ -54,7 +54,7 @@ AdjustmentField::AdjustmentField()
         posY = posY + WIDTH/2;
         posZ = posZ + DEPTH/2;
 
-        printf("Pos is %f, %f, %f, H %i W %i D %i\n", posX, posY, posZ, HEIGHT, WIDTH, DEPTH);
+        //printf("Pos is %f, %f, %f, H %i W %i D %i\n", posX, posY, posZ, HEIGHT, WIDTH, DEPTH);
 
 
         //Save into integer sized chunks.
@@ -80,7 +80,7 @@ AdjustmentField::~AdjustmentField()
 void AdjustmentField::GetFieldValue(const double Point[3],double *Bfield) const
 {
 
-  G4double constFactor = 0.0;
+  G4double constFactor = 1.0;
 
   //printf("Evaluating magfield at %f, %f, %f\n", Point[0], Point[1], Point[2]);
 
@@ -104,7 +104,7 @@ void AdjustmentField::GetFieldValue(const double Point[3],double *Bfield) const
     Bfield[0] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].x*gauss;
     Bfield[1] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].y*gauss;
     Bfield[2] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].z*gauss;
-    printf("FOUND %f, %f, %f WITH STRENGTH %f, %f, %f\n", posX, posY, posZ, Bfield[0]/gauss, Bfield[1]/gauss, Bfield[2]/gauss);
+    //printf("FOUND %f, %f, %f WITH STRENGTH %f, %f, %f\n", posX, posY, posZ, Bfield[0]/gauss, Bfield[1]/gauss, Bfield[2]/gauss);
 
   } else {
     Bfield[0] = 0*gauss;
