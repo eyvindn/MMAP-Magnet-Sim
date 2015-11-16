@@ -63,7 +63,7 @@ G4bool OmniSD::ProcessHits(G4Step* step,
 {
 
   G4double edep = step->GetTrack()->GetTotalEnergy();
-  if (edep<2.*MeV) return false;
+  if (edep<0.*MeV) return false;
 
    OmniHit* hit = new OmniHit();
 

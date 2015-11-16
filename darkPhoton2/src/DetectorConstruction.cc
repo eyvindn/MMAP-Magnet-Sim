@@ -69,11 +69,12 @@ fLogicCalor(NULL), //logical volume for calorimeter
     fCLEOMaterial(NULL),
     fWorldMaterial(NULL),
   fStepLimit(NULL), 
-    fCheckOverlaps(false), 
+    fCheckOverlaps(true), 
     fLiningMaterial(NULL), 
     fVacuumMaterial(NULL),
     fBeamLineMaterial(NULL),
     fScintillatorMaterial(NULL),
+    fMagnetMaterial(NULL),
     CLEObool(false)
     //  fCenterToFront(0.)
 {
@@ -118,7 +119,9 @@ void DetectorConstruction::DefineMaterials()
   G4String name, symbol;
   G4int nComp, nAtom;
 
-  fScintillatorMaterial = nistManager->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
+  fScintillatorMaterial = nistManager->FindOrBuildMaterial("G4_LUCITE"); //G4_PLASTIC_SC_SOMETHING_SORRY_LOOKITUP
+
+  fMagnetMaterial = nistManager->FindOrBuildMaterial("G4_STAINLESS-STEEL");
 
   fWallMaterial = nistManager->FindOrBuildMaterial("G4_CONCRETE");
   
@@ -149,8 +152,6 @@ void DetectorConstruction::DefineMaterials()
   fSpaceMaterial = lhe;
 
 
-
-
   //Liquid hydrogen for the target
   a = 1.01*g/mole;
   G4Element* ele_H = new G4Element(
@@ -164,7 +165,23 @@ void DetectorConstruction::DefineMaterials()
   G4Material* lh2 = new G4Material(name = "Liquid Hydrogen", density, nComp =1);
 
   lh2->AddElement(ele_H, nAtom=2);
-  fTargetMaterial = lh2; // Target material is now liquid hydrogen
+
+  //Beryllium for target
+  //New Target is going to be 1/2 inch plate of Be 
+  //CJC 11/15/15
+  a = 9.01218*g/mole;
+  G4Element* ele_Be = new G4Element(
+				    name="Beryllium", 
+				    symbol="Be", 
+				    z=4., 
+				    a);
+
+  density = 1.85*g/cm3;
+  G4Material* solidBe = new G4Material(name="Beryllium", density, nComp=1);
+  solidBe->AddElement(ele_Be, nAtom=1);
+  fTargetMaterial=solidBe; //Target is made of beryllium
+  
+
 
   //Cesium Iodide for the crystals
 
@@ -206,14 +223,18 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 
   //Sizes and lengths
 
-  G4double targetLength = 10.0*cm; // depth of target
+  G4double targetLength = .5*2.54*cm; // target is 1/2 inch
   G4double targetFace = 10.0*cm; //lengths of sides of face of target
 
-  G4double crystalLength = 2.54*12.0*cm; 
+  G4double crystalLength = 2.54*12.0*cm; // 1 ft long xtals
 
   G4double calorSpacing = 10.*m; //distance from target to calorimeter
   G4double targetPos = -(.5*calorSpacing); //position of Z coordinate of target
+  G4double magnetLength= .98*m;
+  G4double magnetFace = .1*m;
+  G4double chamberLength = 3.*m;
   G4double calorDist = .5*calorSpacing + .5*targetLength;
+  G4double spacing = 1.*mm;
 
 
   G4double worldLength = 150.*ft;
@@ -270,7 +291,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 
   /* !!!! DECIDE WHAT SPACE MATERIAL YOU ARE TESTING !!! */
   fSpaceMaterial = fVacuumMaterial; 
-  //fWorldMaterial = fVacuumMaterial;
+  fWorldMaterial = fVacuumMaterial;
   //fSpaceMaterial = fWorldMaterial;
 
 G4Box* worldS = 
@@ -397,15 +418,15 @@ G4VSolid* boxS =
  G4VSolid* floor = new G4Box("floor", worldW/2, floorW/2, worldLength/2);
 
  G4LogicalVolume * ceilingLV =
-   new G4LogicalVolume(ceiling, fWallMaterial, "ceilingLV");
+   new G4LogicalVolume(ceiling, fVacuumMaterial, "ceilingLV"); //fWallMaterial
  G4LogicalVolume * floorLV = 
-   new G4LogicalVolume(floor, fWallMaterial, "floorLV");
+   new G4LogicalVolume(floor, fVacuumMaterial, "floorLV"); //fWallMaterial
 
 
      //Wall blocks
      G4VSolid* wall = new G4Box("wallBlock", wallW/2, wallH/2, wallL/2);
      G4LogicalVolume* wallLV = 
-       new G4LogicalVolume(wall, fWallMaterial, "WallLV");
+       new G4LogicalVolume(wall, fVacuumMaterial, "WallLV"); //fVacuumMaterial
 
  //Scintillators
  
@@ -511,8 +532,8 @@ G4VSolid * beamline3 =
 G4LogicalVolume* beamline3LV = 
   new G4LogicalVolume(
 		      beamline3, 
-		      fBeamLineMaterial, 
-		      "beamline3LV");
+		      fVacuumMaterial, 
+		      "beamline3LV"); //fBeamLineMaterial
 
 //beamVoid3 
 
@@ -537,9 +558,9 @@ G4LogicalVolume* beamline3LV =
 		       "beamVoidLV");
 
  //beamline2
-
+ /*
  G4VSolid * beamline2 =
-   new G4Cons("beamline2", 2.*inch+5.*mm, 2.*inch+8.*mm, 95.*cm, 95.*cm+3.*mm,
+   new G4Cons("beamline2", 2.*inch+5.*mm, 2.*inch+5.*mm+3.*mm, 95.*cm, 95.*cm+3.*mm,
 	      9.9/2.*m, 0.*deg, 360.*deg);
 
  G4LogicalVolume * beamlineLV2 = 
@@ -547,11 +568,44 @@ G4LogicalVolume* beamline3LV =
 		       beamline2, 
 		       fBeamLineMaterial, 
 		       "beamlineLV2");
+ */
+
+ G4VSolid * magnet1 = new G4Box("magnet1", magnetFace/2, magnetFace/2, magnetLength/2);
+ G4LogicalVolume * magnet1LV = new G4LogicalVolume(magnet1, fMagnetMaterial, "magnet1LV");
+
+ G4VSolid * beamPipe1 = new G4Tubs("beamPipe1", 35.*cm, 35.21*cm, chamberLength/2, 0.*deg, 360.*deg);
+ G4LogicalVolume * beamPipe1LV = new G4LogicalVolume(beamPipe1, fBeamLineMaterial, "beampipe1LV");
+
+ G4VSolid * beamPipe2 = new G4Tubs("beamPipe2", 61.*cm, 61.21*cm, chamberLength/2, 0.*deg, 360.*deg);
+ G4LogicalVolume * beamPipe2LV = new G4LogicalVolume(beamPipe2, fBeamLineMaterial, "beampipe2LV");
+
+ G4VSolid * beamPipe3 = new G4Tubs("beamPipe3", 87.*cm, 87.21*cm, chamberLength/2-1.*cm, 0.*deg, 360.*deg);
+ G4LogicalVolume * beamPipe3LV = new G4LogicalVolume(beamPipe3, fBeamLineMaterial, "beampipe3LV");
+
+ G4VSolid * barrier1 = new G4Tubs("barrier1", 35.21*cm, 61.21*cm, .3*cm, 0.*deg, 360.*deg);
+ G4LogicalVolume * barrier1LV = new G4LogicalVolume(barrier1, fBeamLineMaterial, "barrier1LV");
+
+ G4VSolid * barrier2 = new G4Tubs("barrier2", 61.21*cm, 87.21*cm, .3*cm, 0.*deg, 360.*deg);
+ G4LogicalVolume * barrier2LV = new G4LogicalVolume(barrier2, fBeamLineMaterial, "barrier2LV");
+
+ //Plastic covering
+G4VSolid * plasticLining = 
+  new G4Cons("plasticLining",  2.*inch+5.*mm-5.*cm, 2.*inch+5.*mm, 90.*cm, 95.*cm, 
+	     9.9/2.*m, 0.*deg, 360.*deg);
+
+
+G4LogicalVolume * plasticLiningLV = 
+  new G4LogicalVolume(
+		      plasticLining, fVacuumMaterial, "plasticLiningLV"); //fScintillatorMaterial
+ 
+
+		      
+
 
  //beamvoid2
 
- G4VSolid * beamVoid2 = new G4Cons("beamvoid2", 0.*mm, 2.*inch+5.*mm,
-				   0.*mm, 95.*cm,  9.9/2.*m, 
+ G4VSolid * beamVoid2 = new G4Cons("beamvoid2", 0.*mm, 2.*inch+5.*mm-5.*cm,
+				   0.*mm, 90.*cm,  9.9/2.*m, 
 				   0.*deg, 360.*deg);
 
  G4LogicalVolume * beamVoid2LV = 
@@ -604,12 +658,92 @@ G4LogicalVolume * pipeVoidLV =
 		   0, 
 		   fCheckOverlaps);
 
+ //Magnet
+ new G4PVPlacement(0, 
+		 G4ThreeVector(35.*cm+magnetFace/2, 0., targetPos+magnetLength/2), 
+		 magnet1LV, 
+		 "Magnet", 
+		 worldLV, 
+		 false, 
+		 0, 
+		 fCheckOverlaps);
+
+ new G4PVPlacement(0, 
+		 G4ThreeVector(-35.*cm-1magnetFace/2, 0., targetPos+magnetLength/2), 
+		 magnet1LV, 
+		 "Magnet", 
+		 worldLV, 
+		 false, 
+		 0, 
+		 fCheckOverlaps);
+
+ //Modified vacuum chamber
+ new G4PVPlacement(0, 
+		   G4ThreeVector(0., 0., targetPos+targetLength/2+magnetLength+chamberLength/2),
+		   beamPipe1LV, 
+		   "beampipe1", 
+		   worldLV, 
+		   false, 
+		   0, 
+		   fCheckOverlaps);
+
+ new G4PVPlacement(0, 
+		   G4ThreeVector(0., 0., targetPos+targetLength/2+magnetLength+chamberLength*3/2), 
+		   beamPipe2LV, 
+		   "beampipe2", 
+		   worldLV, 
+		   false, 
+		   0, 
+		   fCheckOverlaps);
+
+ new G4PVPlacement(0, 
+		   G4ThreeVector(0., 0., targetPos+targetLength/2+magnetLength+chamberLength*5/2), 
+		   beamPipe3LV, 
+		   "beampipe3", 
+		   worldLV, 
+		   false, 
+		   0, 
+		   fCheckOverlaps);
+
+ new G4PVPlacement(0, 
+		   G4ThreeVector(0., 0., targetPos+targetLength/2+magnetLength+chamberLength/2-.3*cm), 
+		   barrier1LV, 
+		   "barrier1", 
+		   worldLV, 
+		   false, 
+		   0, 
+		   fCheckOverlaps);
+
+ new G4PVPlacement(0, 
+		   G4ThreeVector(0., 0., targetPos+targetLength/2+magnetLength+chamberLength*3/2-.3*cm), 
+		   barrier2LV, 
+		   "barrier2", 
+		   worldLV, 
+		   false, 
+		   0, 
+		   fCheckOverlaps);
+
+		   
+
+
+ //plasticLining
+ /*
+   new G4PVPlacement(0, 
+		    G4ThreeVector(0., 0., 0.),
+		    plasticLiningLV, 
+		    "plasticLining", 
+		     worldLV, 
+		     false, 
+		     0, 
+		     fCheckOverlaps);
+ */
+
  //walls
      
      for(int w=0; w<3; w++)
        {
        new G4PVPlacement(0, 
-			 G4ThreeVector(-2.5*ft-.75*ft*w,0., targetPos+wallTotarget+4*ft*w), 
+			 G4ThreeVector(-2.5*ft-.1*ft*w,0., targetPos+wallTotarget+4*ft*w), 
 			 wallLV, 
 			 "wallBlock",
 			 worldLV, 
@@ -633,7 +767,7 @@ G4LogicalVolume * pipeVoidLV =
  for(int w=0; w<3; w++)
        {
        new G4PVPlacement(0, 
-			 G4ThreeVector(3*ft,0., targetPos+wallTotarget-2*ft-4*ft*w), 
+			 G4ThreeVector(4*ft,0., targetPos+wallTotarget-2*ft-4*ft*w), 
 			 wallLV, 
 			 "wallBlock",
 			 worldLV, 
@@ -644,7 +778,7 @@ G4LogicalVolume * pipeVoidLV =
  for(int w=0; w<4; w++)
        {
        new G4PVPlacement(0, 
-			 G4ThreeVector(3*ft-.25*ft*w,0., targetPos+wallTotarget-10*ft-4*ft*w), 
+			 G4ThreeVector(3*ft-.5*ft*w,0., targetPos+wallTotarget-10*ft-4*ft*w), 
 			 wallLV, 
 			 "wallBlock",
 			 worldLV, 
@@ -905,7 +1039,7 @@ G4LogicalVolume * pipeVoidLV =
 		   fCheckOverlaps);
      
  //beamline2
-     
+     /*
  new G4PVPlacement(0, 
 		   G4ThreeVector(0., 0., 0.), 
 		   beamlineLV2, 
@@ -915,11 +1049,11 @@ G4LogicalVolume * pipeVoidLV =
 		   0, 
 		   fCheckOverlaps);
      
- 
+     */
  
  //beamvoid2
 
- 
+ /*
  new G4PVPlacement(0, 
 		   G4ThreeVector(0., 0., 0.), 
 		   beamVoid2LV, 
@@ -928,6 +1062,7 @@ G4LogicalVolume * pipeVoidLV =
 		   false, 
 		   0, 
 		   fCheckOverlaps);
+ */
  //beam pipe
  //can't place with beamLine3
 
@@ -1077,49 +1212,7 @@ G4LogicalVolume * pipeVoidLV =
 
      
 
-     //Quad Magnet
-     
-     G4VSolid* quadmag = 
-       new G4Box("quadmag", quadW/2, quadW/2, quadL/2);
-     G4LogicalVolume* quadmagLV = 
-       new G4LogicalVolume(quadmag, fWorldMaterial, "quadmagLV");
-     /*
-     new G4PVPlacement(0, 
-		       G4ThreeVector(0., 0., targetPos-4.8*ft),
-		       quadmagLV, 
-		       "QuadMag",
-		       worldLV, 
-		       false, 
-		       0, 
-		       fCheckOverlaps);
-     */
-
-     //Dipole Magnet
-
-     G4VSolid* dipmag = 
-       new G4Box("dipmag", dipW/2, dipW/2, dipL/2);
-     G4LogicalVolume* dipmagLV = 
-       new G4LogicalVolume(dipmag, fWorldMaterial, "dipmagLV");
-     /*
-     new G4PVPlacement(0,
-		       G4ThreeVector(0., 0., targetPos-12.4*ft),
-		       dipmagLV, 
-		       "DipMag",
-		       worldLV, 
-		       false, 
-		       0, 
-		       fCheckOverlaps);
-     
-     new G4PVPlacement(0,
-		       G4ThreeVector(0., 0., targetPos-24.8*ft),
-		       dipmagLV, 
-		       "DipMag",
-		       worldLV, 
-		       false, 
-		       0, 
-		       fCheckOverlaps);
-     */
-
+   
  
 
 
@@ -1135,11 +1228,14 @@ G4LogicalVolume * pipeVoidLV =
  
  wallLV->SetVisAttributes(new G4VisAttributes(G4Colour(.4, .4, .4)));
  beamdumpLV->SetVisAttributes(new G4VisAttributes(G4Colour(1, .64, 0.)));
- quadmagLV->SetVisAttributes(new G4VisAttributes(G4Colour(1, 0., .75)));
- dipmagLV->SetVisAttributes(new G4VisAttributes(G4Colour(.20, .80, .20)));
-
  beamVoidLV->SetVisAttributes(new G4VisAttributes(G4Colour(1., 0., 0.))); 
  beamVoid3LV->SetVisAttributes(new G4VisAttributes(G4Colour(0., 1., 0.)));
+ beamPipe3LV->SetVisAttributes(new G4VisAttributes(G4Colour(1., 0., 0.)));
+ beamPipe2LV->SetVisAttributes(new G4VisAttributes(G4Colour(1., 0., 0.)));
+ beamPipe3LV->SetVisAttributes(new G4VisAttributes(G4Colour(1., 0., 0.)));
+ omniLV->SetVisAttributes(new G4VisAttributes(G4Colour(0., 1., 0.)));
+ magnet1LV->SetVisAttributes(new G4VisAttributes(G4Colour(0., 0., 1.)));
+ 
 
 
 

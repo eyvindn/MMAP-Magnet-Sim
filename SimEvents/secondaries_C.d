@@ -64,5 +64,7 @@
 ./secondaries_C.so: /usr/local/root/5.34.09/include/root/TError.h
 ./secondaries_C.so: /usr/local/root/5.34.09/include/root/TRandom3.h
 ./secondaries_C.so: /usr/local/root/5.34.09/include/root/TRandom.h
+./secondaries_C.so: /usr/local/root/5.34.09/include/root/THStack.h
+./secondaries_C.so: /usr/local/root/5.34.09/include/root/TObjArray.h
 ./secondaries_C.so: /usr/local/root/5.34.09/include/root/cintdictversion.h /usr/local/root/5.34.09/include/root/RVersion.h
 secondaries_C__ROOTBUILDVERSION= 5.34/09

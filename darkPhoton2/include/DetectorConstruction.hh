@@ -71,6 +71,7 @@ private:
   G4Material* fVacuumMaterial; // vacuum
   G4Material* fBeamLineMaterial; //duh
   G4Material* fScintillatorMaterial;
+  G4Material* fMagnetMaterial; 
 
   G4UserLimits* fStepLimit; // pointer to user step limits
 
