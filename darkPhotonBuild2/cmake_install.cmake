@@ -1,4 +1,4 @@
-# Install script for directory: /home/local1/magnetSim/MMAP-Magnet-Sim/darkPhoton2
+# Install script for directory: /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/darkPhoton"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/local1/magnetSim/MMAP-Magnet-Sim/darkPhotonBuild2/darkPhoton")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/darkPhoton")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/darkPhoton" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/darkPhoton")
     FILE(RPATH_REMOVE
@@ -56,7 +56,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/local1/magnetSim/MMAP-Magnet-Sim/darkPhotonBuild2/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/local1/magnetSim/MMAP-Magnet-Sim/darkPhotonBuild2/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

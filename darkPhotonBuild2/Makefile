@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/local1/magnetSim/MMAP-Magnet-Sim/darkPhoton2
+CMAKE_SOURCE_DIR = /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhoton2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/local1/magnetSim/MMAP-Magnet-Sim/darkPhotonBuild2
+CMAKE_BINARY_DIR = /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,9 +113,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/local1/magnetSim/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles /home/local1/magnetSim/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/local1/magnetSim/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/sf_darkphotons_new/newest/MMAP-Magnet-Sim/darkPhotonBuild2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -683,6 +683,30 @@ src/TestSD.cc.s:
 	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/TestSD.cc.s
 .PHONY : src/TestSD.cc.s
 
+src/oldDetectorConstruction.o: src/oldDetectorConstruction.cc.o
+.PHONY : src/oldDetectorConstruction.o
+
+# target to build an object file
+src/oldDetectorConstruction.cc.o:
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/oldDetectorConstruction.cc.o
+.PHONY : src/oldDetectorConstruction.cc.o
+
+src/oldDetectorConstruction.i: src/oldDetectorConstruction.cc.i
+.PHONY : src/oldDetectorConstruction.i
+
+# target to preprocess a source file
+src/oldDetectorConstruction.cc.i:
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/oldDetectorConstruction.cc.i
+.PHONY : src/oldDetectorConstruction.cc.i
+
+src/oldDetectorConstruction.s: src/oldDetectorConstruction.cc.s
+.PHONY : src/oldDetectorConstruction.s
+
+# target to generate assembly for a file
+src/oldDetectorConstruction.cc.s:
+	$(MAKE) -f CMakeFiles/darkPhoton.dir/build.make CMakeFiles/darkPhoton.dir/src/oldDetectorConstruction.cc.s
+.PHONY : src/oldDetectorConstruction.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -762,6 +786,9 @@ help:
 	@echo "... src/TestSD.o"
 	@echo "... src/TestSD.i"
 	@echo "... src/TestSD.s"
+	@echo "... src/oldDetectorConstruction.o"
+	@echo "... src/oldDetectorConstruction.i"
+	@echo "... src/oldDetectorConstruction.s"
 .PHONY : help
 
 
