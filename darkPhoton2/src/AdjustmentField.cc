@@ -23,7 +23,7 @@ AdjustmentField::AdjustmentField()
         DEPTH = (DEPTH-1)*2;
         HEIGHT = HEIGHT-1;
         WIDTH = WIDTH-1;
-        printf("Pos is H %i W %i D %i\n",HEIGHT, WIDTH, DEPTH);
+        //printf("Pos is H %i W %i D %i\n",HEIGHT, WIDTH, DEPTH);
         //Set up sizes. (HEIGHT x WIDTH)
         magField.resize(HEIGHT*2);
         for (int k = 0; k < HEIGHT*2; ++k) {
@@ -54,7 +54,7 @@ AdjustmentField::AdjustmentField()
         posY = posY + WIDTH/2;
         posZ = posZ + DEPTH/2;
 
-        printf("Pos is %f, %f, %f, H %i W %i D %i\n", posX, posY, posZ, HEIGHT, WIDTH, DEPTH);
+        //printf("Pos is %f, %f, %f, H %i W %i D %i\n", posX, posY, posZ, HEIGHT, WIDTH, DEPTH);
 
 
         //Save into integer sized chunks.
