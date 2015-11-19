@@ -38,14 +38,14 @@ using namespace std;
 
 class AdjustmentField : public G4MagneticField
 {
-  public:
+public:
     AdjustmentField();
     virtual ~AdjustmentField();
 
     virtual void GetFieldValue(const double Point[3],
                                double *Bfield ) const;
 
-  private:
+private:
     struct position {
         G4double x;
         G4double y;
@@ -54,6 +54,13 @@ class AdjustmentField : public G4MagneticField
     int HEIGHT;
     int WIDTH;
     int DEPTH;
+    double x_prec;
+    double y_prec;
+    double z_prec;
+
+    double x_zero;
+    double y_zero;
+    double z_zero;
 
     position center;
     std::vector<std::vector<std::vector<position> > > magField;
