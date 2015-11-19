@@ -54,7 +54,7 @@ AdjustmentField::AdjustmentField()
         posY = posY + WIDTH/2;
         posZ = posZ + DEPTH/2;
 
-        //printf("Pos is %f, %f, %f, H %i W %i D %i\n", posX, posY, posZ, HEIGHT, WIDTH, DEPTH);
+        printf("Pos is %f, %f, %f, H %i W %i D %i\n", posX, posY, posZ, HEIGHT, WIDTH, DEPTH);
 
 
         //Save into integer sized chunks.
