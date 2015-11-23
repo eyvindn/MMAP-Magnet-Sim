@@ -84,7 +84,9 @@ G4bool OmniSD::ProcessHits(G4Step* step,
   hit->SetCharge(step->GetTrack()->GetDefinition()->GetPDGCharge());
   hit->SetStart(step->GetTrack()->GetVertexPosition());
   hit->SetTar(step->GetTrack()->GetPosition());
-  
+  //int parentID = step->GetTrack()->GetParentID();
+  double parentEng = step->GetTrack()->GetDynamicParticle()->GetTotalEnergy();
+  hit->SetParEnergy(parentEng);
   /*
   OmniHit* hit = new OmniHit();
   

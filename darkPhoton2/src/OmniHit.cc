@@ -28,7 +28,8 @@ OmniHit::OmniHit()
     fMomentum(G4ThreeVector()), 
     fCharge(0.), 
     fStart(G4ThreeVector()), 
-    fTar(G4ThreeVector())
+    fTar(G4ThreeVector()), 
+    fParEng(0.)
 {}
 
 OmniHit::~OmniHit()
@@ -46,6 +47,7 @@ OmniHit::OmniHit(const OmniHit& hit)
   fCharge = hit.fCharge;
   fStart = hit.fStart;
   fTar = hit.fTar;
+  fParEng = hit.fParEng;
 }
 
 const OmniHit& OmniHit::operator=(const OmniHit& hit)
@@ -57,6 +59,7 @@ const OmniHit& OmniHit::operator=(const OmniHit& hit)
   fCharge = hit.fCharge;
   fStart = hit.fStart;
   fTar=hit.fTar;
+  fParEng=hit.fParEng;
 
   return *this;
 

@@ -53,6 +53,8 @@ public:
   {fStart = start;}
   void SetTar(G4ThreeVector tar)
   {fTar = tar;}
+  void SetParEnergy(G4double pareng)
+  {fParEng = pareng;}
 
   //Get methods
   G4int GetTrack()
@@ -71,6 +73,8 @@ public:
   {return fCharge;}
   G4ThreeVector GetTar()
   {return fTar;}
+  G4double GetParEnergy()
+  {return fParEng;}
   
  
 
@@ -85,6 +89,7 @@ private:
   G4ThreeVector fStart;
   G4double fCharge;
   G4ThreeVector fTar;
+  G4double fParEng;
 };
 
 //Allow for a hits collection of OmniHits

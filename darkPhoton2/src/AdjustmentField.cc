@@ -2,11 +2,13 @@
 #include "AdjustmentField.hh"
 #include <fstream>
 
+//THIS IS FOR THE SEXTAPOLE
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 AdjustmentField::AdjustmentField()
 {
 
-  std::ifstream file("../six_map.table");
+  std::ifstream file("../six_mag.table");
   x_prec = 0.5;
   y_prec = 0.5;
   z_prec = 2.0;
@@ -62,7 +64,7 @@ AdjustmentField::AdjustmentField()
       posY = (posY - y_zero)/y_prec;// + (WIDTH-1)/2;
       posZ = (posZ - z_zero)/z_prec;// + //(DEPTH-1)/2;
 
-      printf("Pos is %f, %f, %f, H %i W %i D %i\n", posX, posY, posZ, HEIGHT, WIDTH, DEPTH);
+      /*printf("Pos is %f, %f, %f, H %i W %i D %i\n", posX, posY, posZ, HEIGHT, WIDTH, DEPTH);*/
 
 
       //Save into integer sized chunks.

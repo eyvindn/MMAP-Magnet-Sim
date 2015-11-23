@@ -34,7 +34,8 @@ RunAction::RunAction()
   analysisMan->SetVerboseLevel(1);
   
   analysisMan->CreateNtuple("Signal", "SignalTest");
-
+  analysisMan->CreateNtupleIColumn("PlaceHolder");
+  /*
       for (G4int j = 0; j<1225; j++)
 	{
 	  std::stringstream ss2; 
@@ -50,6 +51,7 @@ RunAction::RunAction()
 
 
       analysisMan->CreateNtupleIColumn("hits");
+  */
       analysisMan->FinishNtuple(); 
 
       analysisMan->CreateNtuple("Check", "Check");
@@ -65,6 +67,7 @@ RunAction::RunAction()
       analysisMan->CreateNtupleDColumn("TarX");
       analysisMan->CreateNtupleDColumn("TarY");
       analysisMan->CreateNtupleDColumn("TarZ");
+      analysisMan->CreateNtupleDColumn("ParentEnergy");
       //analysisMan->CreateNtupleIColumn("TrackID");
       analysisMan->FinishNtuple();
 
