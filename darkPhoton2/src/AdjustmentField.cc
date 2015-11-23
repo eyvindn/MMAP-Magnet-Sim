@@ -6,6 +6,8 @@
 AdjustmentField::AdjustmentField()
 {
 
+  /** THE SEXTUPOLE **/
+  /*
   std::ifstream file("../six_map.table");
   x_prec = 0.5;
   y_prec = 0.5;
@@ -14,12 +16,25 @@ AdjustmentField::AdjustmentField()
   x_zero = -9.0;
   y_zero = -9.0;
   z_zero = -60.0;
+   */
+
+  /** THE OLD MAGNET **/
+  /* */
+  std::ifstream file("../magMap.table");
+  x_prec = 1.0;
+  y_prec = 1.0;
+  z_prec = 2.0;
+
+  x_zero = -10.0;
+  y_zero = -10.0;
+  z_zero = -80.0;
+  /* */
 
   std::string line;
 
   center.x = 0;
   center.y = 0;
-  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + .5*m;
+  center.z = -(.5*10.*m) + 0.55*m + 0.25*m;// + .5*m;
 
   int i = 0;
   while(std::getline(file, line))
