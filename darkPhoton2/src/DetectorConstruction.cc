@@ -48,6 +48,7 @@
 #include "AdjustmentField.hh"
 #include "G4FieldManager.hh"
 #include "G4TransportationManager.hh"
+#include "G4PropagatorInField.hh"
 
 
 static const G4double inch = 2.54*cm;
@@ -842,6 +843,10 @@ void DetectorConstruction::ConstructSDandField()
     fieldMgr->SetDetectorField(aField);
     fieldMgr->CreateChordFinder(aField);
 
+    G4PropagatorInField* propMgr = G4TransportationManager::GetTransportationManager()->GetPropagatorInField();
+
+    //Largest acceptable Step is 1km by default
+    propMgr->SetLargestAcceptableStep( 10*cm);
 
     SDname = "/calorimeterSD";
   TestSD* calorimeterSD =
