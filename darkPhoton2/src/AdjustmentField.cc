@@ -8,7 +8,13 @@
 AdjustmentField::AdjustmentField()
 {
 
-  std::ifstream file("../six_mag.table");
+  //<<<<<<< HEAD
+  //std::ifstream file("../six_mag.table");
+  //=======
+  /** THE SEXTUPOLE **/
+  /* */
+  std::ifstream file("../six_map.table");
+  //>>>>>>> 587ed7356566587f6051ae0b3a64436b28121cd6
   x_prec = 0.5;
   y_prec = 0.5;
   z_prec = 2.0;
@@ -16,12 +22,25 @@ AdjustmentField::AdjustmentField()
   x_zero = -9.0;
   y_zero = -9.0;
   z_zero = -60.0;
+   /* */
+
+  /** THE OLD MAGNET **/
+  /*
+  std::ifstream file("../magMap.table");
+  x_prec = 1.0;
+  y_prec = 1.0;
+  z_prec = 2.0;
+
+  x_zero = -10.0;
+  y_zero = -10.0;
+  z_zero = -80.0;
+  */
 
   std::string line;
 
   center.x = 0;
   center.y = 0;
-  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + .5*m;
+  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + 0.5*m;
 
   int i = 0;
   while(std::getline(file, line))
@@ -29,7 +48,7 @@ AdjustmentField::AdjustmentField()
     std::stringstream linestream(line);
 
     if(i == 0){
-      linestream >> DEPTH >> WIDTH >> HEIGHT;
+      //linestream >> DEPTH >> WIDTH >> HEIGHT;
       DEPTH = DEPTH; // This is the number of entries in each direction
       HEIGHT = HEIGHT;
       WIDTH = WIDTH;
@@ -114,10 +133,13 @@ void AdjustmentField::GetFieldValue(const double Point[3],double *Bfield) const
     Bfield[0] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].x*gauss;
     Bfield[1] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].y*gauss;
     Bfield[2] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].z*gauss;
-    printf("FOUND %f, %f, %f WITH STRENGTH %f, %f, %f\n", posX, posY, posZ, Bfield[0]/gauss, Bfield[1]/gauss, Bfield[2]/gauss);
-    printf("ORIGINAL WAS %f, %f, %f\n", (Point[0]-center.x)/cm, (Point[1]-center.y)/cm, (Point[2]-center.z)/cm);
+    //printf("FOUND %f, %f, %f WITH STRENGTH %f, %f, %f\n", posX, posY, posZ, Bfield[0]/gauss, Bfield[1]/gauss, Bfield[2]/gauss);
+    //printf("ORIGINAL WAS %f, %f, %f\n", (Point[0]-center.x)/cm, (Point[1]-center.y)/cm, (Point[2]-center.z)/cm);
 
   } else {
+
+//    printf("DIDNT FIND %f, %f, %f WITH STRENGTH %f, %f, %f\n", posX, posY, posZ, Bfield[0]/gauss, Bfield[1]/gauss, Bfield[2]/gauss);
+//    printf("ORIGINAL WAS %f, %f, %f\n", (Point[0]-center.x)/cm, (Point[1]-center.y)/cm, (Point[2]-center.z)/cm);
     Bfield[0] = 0*gauss;
     Bfield[1] = 0*gauss;
     Bfield[2] = 0*gauss;
