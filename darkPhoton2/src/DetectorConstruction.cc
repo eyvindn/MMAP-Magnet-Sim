@@ -884,7 +884,7 @@ void DetectorConstruction::ConstructSDandField()
   G4String SDname;
 
     /*Add Adjustment Magnet Field*/
-    AdjustmentField* aField = new AdjustmentField; //"../magMap.table", -5.0, -5.0, -5.0)
+    AdjustmentField* aField = new AdjustmentField;
     G4FieldManager* fieldMgr
             = G4TransportationManager::GetTransportationManager()->GetFieldManager();
     fieldMgr->SetDetectorField(aField);

@@ -8,13 +8,9 @@
 AdjustmentField::AdjustmentField()
 {
 
-  //<<<<<<< HEAD
-  //std::ifstream file("../six_mag.table");
-  //=======
   /** THE SEXTUPOLE **/
   /* */
   std::ifstream file("../six_map.table");
-  //>>>>>>> 587ed7356566587f6051ae0b3a64436b28121cd6
   x_prec = 0.5;
   y_prec = 0.5;
   z_prec = 2.0;
@@ -40,7 +36,7 @@ AdjustmentField::AdjustmentField()
 
   center.x = 0;
   center.y = 0;
-  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + 0.5*m;
+  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + 0.5*m; // CHANGE THIS FOR MAGNET CENTERING!
 
   int i = 0;
   while(std::getline(file, line))
@@ -48,7 +44,7 @@ AdjustmentField::AdjustmentField()
     std::stringstream linestream(line);
 
     if(i == 0){
-      //linestream >> DEPTH >> WIDTH >> HEIGHT;
+      linestream >> DEPTH >> WIDTH >> HEIGHT;
       DEPTH = DEPTH; // This is the number of entries in each direction
       HEIGHT = HEIGHT;
       WIDTH = WIDTH;
