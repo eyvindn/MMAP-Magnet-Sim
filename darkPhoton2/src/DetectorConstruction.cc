@@ -70,7 +70,7 @@ fLogicCalor(NULL), //logical volume for calorimeter
     fCLEOMaterial(NULL),
     fWorldMaterial(NULL),
   fStepLimit(NULL), 
-    fCheckOverlaps(true), 
+    fCheckOverlaps(false), 
     fLiningMaterial(NULL), 
     fVacuumMaterial(NULL),
     fBeamLineMaterial(NULL),
@@ -130,7 +130,7 @@ void DetectorConstruction::DefineMaterials()
   a = 26.98*g/mole;
   fBeamDumpMaterial = new G4Material(name="Aluminum", z=13., a, density);
   fBeamLineMaterial = new G4Material(name="Aluminum", z=13., a, density);
-  fBeamLineMaterial = nistManager->FindOrBuildMaterial("G4_STAINLESS-STEEL");
+  // fBeamLineMaterial = nistManager->FindOrBuildMaterial("G4_STAINLESS-STEEL");
   
 
 
@@ -446,26 +446,26 @@ G4VSolid* boxS =
  G4VSolid * magnet1 = new G4Box("magnet1", magnetFace/2, magnetFace/2, magnetLength/2);
  G4LogicalVolume * magnet1LV = new G4LogicalVolume(magnet1, fMagnetMaterial, "magnet1LV");
 
- G4VSolid * beamPipe0 = new G4Tubs("beamPipe0",14.5*cm, 14.8*cm, (frontSpace+magnetLength+spacing)/2, 
+ G4VSolid * beamPipe0 = new G4Tubs("beamPipe0",14.5*cm, 14.71*cm, (frontSpace+magnetLength+spacing)/2, 
 				   0.*deg, 360.*deg); //MODIFIED THICKNESS
  G4LogicalVolume * beamPipe0LV = new G4LogicalVolume(beamPipe0, fBeamLineMaterial, "beampipe0LV");
 
- G4VSolid * barrier0 = new G4Tubs("barrier0", 14.8*cm, 35.8*cm, .3*cm, 0.*deg, 360.*deg); //MODIFIED THICKNESS
+ G4VSolid * barrier0 = new G4Tubs("barrier0", 14.71*cm, 35.21*cm, .3*cm, 0.*deg, 360.*deg); //MODIFIED THICKNESS
  G4LogicalVolume * barrier0LV = new G4LogicalVolume(barrier0, fBeamLineMaterial, "barrier0LV");
 
- G4VSolid * beamPipe1 = new G4Tubs("beamPipe1", 35.*cm, 35.3*cm, chamberLength/2, 0.*deg, 360.*deg); //MODIFIED THICKNESS
+ G4VSolid * beamPipe1 = new G4Tubs("beamPipe1", 35.*cm, 35.21*cm, chamberLength/2, 0.*deg, 360.*deg); //MODIFIED THICKNESS
  G4LogicalVolume * beamPipe1LV = new G4LogicalVolume(beamPipe1, fBeamLineMaterial, "beampipe1LV");
 
- G4VSolid * beamPipe2 = new G4Tubs("beamPipe2", 61.*cm, 61.3*cm, chamberLength/2, 0.*deg, 360.*deg); //MODIFIED THICKNESS
+ G4VSolid * beamPipe2 = new G4Tubs("beamPipe2", 61.*cm, 61.21*cm, chamberLength/2, 0.*deg, 360.*deg); //MODIFIED THICKNESS
  G4LogicalVolume * beamPipe2LV = new G4LogicalVolume(beamPipe2, fBeamLineMaterial, "beampipe2LV");
 
- G4VSolid * beamPipe3 = new G4Tubs("beamPipe3", 87.*cm, 87.3*cm, chamberLength/2-1.*cm, 0.*deg, 360.*deg); //MODIFIED THICKNESS
+ G4VSolid * beamPipe3 = new G4Tubs("beamPipe3", 87.*cm, 87.21*cm, chamberLength/2-1.*cm, 0.*deg, 360.*deg); //MODIFIED THICKNESS
  G4LogicalVolume * beamPipe3LV = new G4LogicalVolume(beamPipe3, fBeamLineMaterial, "beampipe3LV");
 
- G4VSolid * barrier1 = new G4Tubs("barrier1", 35.3*cm, 61.3*cm, .3*cm, 0.*deg, 360.*deg); //MODIFIED THICKNESS
+ G4VSolid * barrier1 = new G4Tubs("barrier1", 35.21*cm, 61.21*cm, .3*cm, 0.*deg, 360.*deg); //MODIFIED THICKNESS
  G4LogicalVolume * barrier1LV = new G4LogicalVolume(barrier1, fBeamLineMaterial, "barrier1LV");
 
- G4VSolid * barrier2 = new G4Tubs("barrier2", 61.3*cm, 87.3*cm, .3*cm, 0.*deg, 360.*deg); //MODIFIED THICKNESS
+ G4VSolid * barrier2 = new G4Tubs("barrier2", 61.21*cm, 87.21*cm, .3*cm, 0.*deg, 360.*deg); //MODIFIED THICKNESS
  G4LogicalVolume * barrier2LV = new G4LogicalVolume(barrier2, fBeamLineMaterial, "barrier2LV");
 
 
@@ -475,7 +475,7 @@ G4VSolid* boxS =
 
  G4LogicalVolume * barrier3LV = new G4LogicalVolume(barrier3, fBeamLineMaterial, "barrier3LV"); 
  
- G4VSolid * beamPipe4 = new G4Tubs("beamPipe4", 21.*cm, 21.3*cm, toDumpLength/2, 0.*deg, 360.*deg); //MODIFIED THICKNESS
+ G4VSolid * beamPipe4 = new G4Tubs("beamPipe4", 21.*cm, 21.21*cm, toDumpLength/2, 0.*deg, 360.*deg); //MODIFIED THICKNESS
 
  G4LogicalVolume * beamPipe4LV = new G4LogicalVolume(beamPipe4, fBeamLineMaterial, "beamPipe4LV");
  
@@ -557,6 +557,15 @@ G4LogicalVolume * pipeVoidLV =
 		 fCheckOverlaps);
 
  //Modified vacuum chamber
+ new G4PVPlacement(0, 
+		   G4ThreeVector(0., 0., targetPos+(frontSpace+targetLength+magnetLength)/2), 
+		   beamPipe0LV, 
+		   "beampipe0", 
+		   worldLV, 
+		   false, 
+		   0, 
+		   fCheckOverlaps);
+ 
  new G4PVPlacement(0, 
 		   G4ThreeVector(0., 0., targetPos+frontSpace+targetLength/2+magnetLength+chamberLength/2),
 		   beamPipe1LV, 
