@@ -38,7 +38,11 @@ AdjustmentField::AdjustmentField()
 
   center.x = 0;
   center.y = 0;
+<<<<<<< HEAD
   center.z = -(.5*10.*m) + 0.55*m + 0.25*m; //  + 0.5*m; // CHANGE THIS FOR MAGNET CENTERING!
+=======
+  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + 0.8*m; // CHANGE THIS FOR MAGNET CENTERING!
+>>>>>>> 624661721f019f4a169d524cdb60b9f69744e038
 
   int i = 0;
   while(std::getline(file, line))
@@ -86,9 +90,10 @@ AdjustmentField::AdjustmentField()
 
       //Save into integer sized chunks.
 
-      magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].x = bX;
-      magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].y = bY;
-      magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].z = bZ;
+      //we reverse this i think
+      magField[HEIGHT - (int)floor(posX)][WIDTH - (int)floor(posY)][DEPTH - (int)floor(posZ)].x = bX;
+      magField[HEIGHT - (int)floor(posX)][WIDTH - (int)floor(posY)][DEPTH - (int)floor(posZ)].y = bY;
+      magField[HEIGHT - (int)floor(posX)][WIDTH - (int)floor(posY)][DEPTH - (int)floor(posZ)].z = bZ;
 //        magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ+1)].x = bX;
 //        magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ+1)].y = bY;
 //        magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ+1)].z = bZ;
