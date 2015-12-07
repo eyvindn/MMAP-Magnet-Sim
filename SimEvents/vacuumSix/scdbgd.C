@@ -23,7 +23,7 @@ void scdbgd(int choose){ //0 for 2gamma, 1 for 3gamma, 2 for bhabha, 3 for radBh
   else 
     background = "radBhab5k.root";
   
-  TFile* file = new TFile("2gamma5k.root");
+  TFile* file = new TFile("3gamma5k.root");
 
   TTree* tree = (TTree *)file->Get("Check");
 

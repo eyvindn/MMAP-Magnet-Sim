@@ -10,6 +10,7 @@ AdjustmentField::AdjustmentField()
 
   /** THE SEXTUPOLE **/
   /* */
+  /*
   std::ifstream file("../six_map.table");
   x_prec = 0.5;
   y_prec = 0.5;
@@ -18,10 +19,11 @@ AdjustmentField::AdjustmentField()
   x_zero = -9.0;
   y_zero = -9.0;
   z_zero = -60.0;
+  */
    /* */
 
   /** THE OLD MAGNET **/
-  /*
+  
   std::ifstream file("../magMap.table");
   x_prec = 1.0;
   y_prec = 1.0;
@@ -30,13 +32,13 @@ AdjustmentField::AdjustmentField()
   x_zero = -10.0;
   y_zero = -10.0;
   z_zero = -80.0;
-  */
+  
 
   std::string line;
 
   center.x = 0;
   center.y = 0;
-  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + 0.8*m; //updated to 0.8 because it's reversed... CHANGE THIS FOR MAGNET CENTERING!
+  center.z = -(.5*10.*m) + 0.55*m + 0.25*m; //+ 0.8*m; //updated to 0.8 because it's reversed... CHANGE THIS FOR MAGNET CENTERING!
 
   int i = 0;
   while(std::getline(file, line))
@@ -106,7 +108,7 @@ AdjustmentField::~AdjustmentField()
 void AdjustmentField::GetFieldValue(const double Point[3],double *Bfield) const
 {
 
-  G4double constFactor = 1.0;
+  G4double constFactor = 0.5;
 
   //printf("Evaluating magfield at %f, %f, %f\n", Point[0], Point[1], Point[2]);
 
