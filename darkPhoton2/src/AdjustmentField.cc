@@ -36,7 +36,7 @@ AdjustmentField::AdjustmentField()
 
   center.x = 0;
   center.y = 0;
-  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + 0.8*m; // CHANGE THIS FOR MAGNET CENTERING!
+  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + 0.8*m; //updated to 0.8 because it's reversed... CHANGE THIS FOR MAGNET CENTERING!
 
   int i = 0;
   while(std::getline(file, line))
@@ -85,9 +85,9 @@ AdjustmentField::AdjustmentField()
       //Save into integer sized chunks.
 
       //we reverse this i think
-      magField[HEIGHT - (int)floor(posX)][WIDTH - (int)floor(posY)][DEPTH - (int)floor(posZ)].x = bX;
-      magField[HEIGHT - (int)floor(posX)][WIDTH - (int)floor(posY)][DEPTH - (int)floor(posZ)].y = bY;
-      magField[HEIGHT - (int)floor(posX)][WIDTH - (int)floor(posY)][DEPTH - (int)floor(posZ)].z = bZ;
+      magField[(int)floor(posX)][(int)floor(posY)][DEPTH - (int)floor(posZ)].x = bX;
+      magField[(int)floor(posX)][(int)floor(posY)][DEPTH - (int)floor(posZ)].y = bY;
+      magField[(int)floor(posX)][(int)floor(posY)][DEPTH - (int)floor(posZ)].z = bZ;
 //        magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ+1)].x = bX;
 //        magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ+1)].y = bY;
 //        magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ+1)].z = bZ;
@@ -130,6 +130,7 @@ void AdjustmentField::GetFieldValue(const double Point[3],double *Bfield) const
     Bfield[0] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].x*gauss;
     Bfield[1] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].y*gauss;
     Bfield[2] = constFactor*magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ)].z*gauss;
+
     //printf("FOUND %f, %f, %f WITH STRENGTH %f, %f, %f\n", posX, posY, posZ, Bfield[0]/gauss, Bfield[1]/gauss, Bfield[2]/gauss);
     //printf("ORIGINAL WAS %f, %f, %f\n", (Point[0]-center.x)/cm, (Point[1]-center.y)/cm, (Point[2]-center.z)/cm);
 
