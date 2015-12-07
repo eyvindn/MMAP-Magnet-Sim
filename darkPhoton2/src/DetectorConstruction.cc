@@ -832,14 +832,14 @@ G4LogicalVolume * pipeVoidLV =
 		   0, 
 		   fCheckOverlaps);
 
-     
-
-									  
-    
-    
 
 
-     
+
+
+
+
+
+
 
    
  
@@ -877,7 +877,6 @@ G4LogicalVolume * pipeVoidLV =
 
  G4double maxStep = 1.0*cm;
  fStepLimit = new G4UserLimits(maxStep);
-
 
 
  return worldPV;

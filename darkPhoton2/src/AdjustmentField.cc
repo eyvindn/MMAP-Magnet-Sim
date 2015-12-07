@@ -9,8 +9,8 @@ AdjustmentField::AdjustmentField()
 {
 
   /** THE SEXTUPOLE **/
-  /* */
-  /*
+
+
   std::ifstream file("../six_map.table");
   x_prec = 0.5;
   y_prec = 0.5;
@@ -19,26 +19,27 @@ AdjustmentField::AdjustmentField()
   x_zero = -9.0;
   y_zero = -9.0;
   z_zero = -60.0;
-  */
-   /* */
+
+
 
   /** THE OLD MAGNET **/
-  
-  std::ifstream file("../magMap.table");
-  x_prec = 1.0;
-  y_prec = 1.0;
-  z_prec = 2.0;
-
-  x_zero = -10.0;
-  y_zero = -10.0;
-  z_zero = -80.0;
-  
+//
+//  std::ifstream file("../magMap.table");
+//  x_prec = 1.0;
+//  y_prec = 1.0;
+//  z_prec = 2.0;
+//
+//  x_zero = -10.0;
+//  y_zero = -10.0;
+//  z_zero = -80.0;
+//
 
   std::string line;
 
+
   center.x = 0;
   center.y = 0;
-  center.z = -(.5*10.*m) + 0.55*m + 0.25*m; //+ 0.8*m; //updated to 0.8 because it's reversed... CHANGE THIS FOR MAGNET CENTERING!
+  center.z = -(.5*10.*m) + 0.55*m + 0.25*m + 0.8*m; //updated to 0.8 because it's reversed... CHANGE THIS FOR MAGNET CENTERING!
 
   int i = 0;
   while(std::getline(file, line))
@@ -81,22 +82,25 @@ AdjustmentField::AdjustmentField()
       posY = (posY - y_zero)/y_prec;// + (WIDTH-1)/2;
       posZ = (posZ - z_zero)/z_prec;// + //(DEPTH-1)/2;
 
-      /*printf("Pos is %f, %f, %f, H %i W %i D %i\n", posX, posY, posZ, HEIGHT, WIDTH, DEPTH);*/
+      //printf("Pos is %f, %f, %f, H %i W %i D %i and mag is %f, %f, %f\n", floor(posX), floor(posY), floor(DEPTH - (int)floor(posZ)), HEIGHT, WIDTH, DEPTH, bX, bY, bZ);
 
 
       //Save into integer sized chunks.
 
       //we reverse this i think
-      magField[(int)floor(posX)][(int)floor(posY)][DEPTH - (int)floor(posZ)].x = bX;
-      magField[(int)floor(posX)][(int)floor(posY)][DEPTH - (int)floor(posZ)].y = bY;
-      magField[(int)floor(posX)][(int)floor(posY)][DEPTH - (int)floor(posZ)].z = bZ;
+      magField[(int)floor(posX)][(int)floor(posY)][DEPTH-1 - (int)floor(posZ)].x = bX;
+      magField[(int)floor(posX)][(int)floor(posY)][DEPTH-1 - (int)floor(posZ)].y = bY;
+      magField[(int)floor(posX)][(int)floor(posY)][DEPTH-1 - (int)floor(posZ)].z = bZ;
+
+
 //        magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ+1)].x = bX;
 //        magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ+1)].y = bY;
 //        magField[(int)floor(posX)][(int)floor(posY)][(int)floor(posZ+1)].z = bZ;
-
+      
     }
     i++;
   }
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -108,7 +112,7 @@ AdjustmentField::~AdjustmentField()
 void AdjustmentField::GetFieldValue(const double Point[3],double *Bfield) const
 {
 
-  G4double constFactor = 0.5;
+  G4double constFactor = 1.0;
 
   //printf("Evaluating magfield at %f, %f, %f\n", Point[0], Point[1], Point[2]);
 
