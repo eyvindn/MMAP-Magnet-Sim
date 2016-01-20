@@ -102,7 +102,7 @@ int main(int argc, char** argv)
     //batch mode
     if (argc !=1)
       {
-	G4String command = "/control/execture ";
+	G4String command = "/control/execute ";
 	G4String fileName = argv[1]; 
 	UImanager->ApplyCommand(command+fileName);
       }
@@ -131,9 +131,9 @@ int main(int argc, char** argv)
    *along with the deletion of the run manager
    *at the termination of the run.
    */
-    //#ifdef G4VIS_USE
-    //  delete visManager;
-    //#endif
+#ifdef G4VIS_USE
+    delete visManager;
+#endif
 
   delete runManager;
 
